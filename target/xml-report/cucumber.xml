@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="13.069">
+<testcase classname="New Password Creation" name="TC_US3_001  New Password box shouldn't be empty,When it empty, User should get" time="7.72">
+<system-out><![CDATA[Given user go to GMI home page..............................................passed
+And Click user icon.........................................................passed
+And Click register..........................................................passed
+And click the new password box..............................................passed
+And leave the empty.........................................................passed
+Then verify the errorMessage................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_002 The password must be at least 4 characters long, if it is less you should get a" time="0.22">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send data less than 4  data.............................................passed
+Then verify the message.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_003 User should not get any error message when entering at least 4 characters" time="0.337">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send the least 4 digit  data............................................passed
+Then verify the strength bar................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_004 There should be at least 1 LOWERCASE char for stronger password and" time="0.276">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send the  least 1 LOWERCASE data........................................passed
+Then verify the with least 1 LOWERCASEstrength level........................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_005 When doesn't include at least 1 LOWERCASE char for stronger password and" time="0.255">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send the doesn't include at least 1 LOWERCASE data......................passed
+Then verify the doesn't include at least 1 LOWERCASE strength level.........passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_006 There should be at least 1  UPPERCASE char and see the level  chart change accordingly" time="0.303">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send the least 1  UPPERCASE data........................................passed
+Then verify the with least 1  UPPERCASE strength level......................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_007 When doesn't include at least 1  UPPERCASE char for stronger password and" time="0.251">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send the doesn't include at least 1  UPPERCASE data.....................passed
+Then verify the doesn't include at least 1  UPPERCASEstrength level.........passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_008 There should be at least 1 DIGIT and see the level  chart change accordingly" time="0.292">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send the least 1 DIGIT  data............................................passed
+Then verify the least 1 DIGIT strength level................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_009  When doesn't include at least 1 DIGIT  char for stronger password and" time="0.225">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send the doesn't include at least 1 DIGIT...............................passed
+Then verify the doesn't include at least 1 DIGITstrength level..............passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_010  There should be at least 1 SPECIAL char and see the level chart change accordingly" time="0.214">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send the least 1 SPECIAL data...........................................passed
+Then verify the least 1 SPECIAL strength level..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_011 When doesn't include at least 1 SPECIAL char for stronger password and" time="0.195">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send the doesn't include at least 1 SPECIALdata.........................passed
+Then verify the doesn't include at least 1 SPECIAL strength level...........passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_012  There should be at least 7 chars for a stronger password" time="0.19">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send the  at least 7 chars data.........................................passed
+Then verify the at least 7 chars strength level.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_013&#9;Create a very strong password when using more than one of each of the uppercase, lowercase," time="0.167">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send the a very strong password data....................................passed
+Then verify the a very strong password strength level.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_014 Box Of New Password Confirmation  shouldn't be empty,When it empty, User should get" time="0.223">
+<system-out><![CDATA[Given click the new password CONFIRMATION box...............................passed
+And leave the empty confirm new password box................................passed
+Then verify the empty confirm error messages................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_015  The box of new password confirmation must be at least 4 characters long," time="0.137">
+<system-out><![CDATA[Given click the new password CONFIRMATION box...............................passed
+And send the data less then 4...............................................passed
+Then verify the less then 4 error message...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_016&#9;When New Password and New Password Confirmation  don't match the user should get the" time="0.22">
+<system-out><![CDATA[Given click the new password CONFIRMATION box...............................passed
+And send the no different  data from new password...........................passed
+Then verify the no different  data  error message...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_017&#9;New Password and New Password Confirmation should match and User shouldn't get any error message" time="0.292">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send the new data.......................................................passed
+And click the new password confirmation box.................................passed
+And send the same data data.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Password Creation" name="TC_US3_018&#9;User must be able to enter a maximum of 50 characters, if it be more than 50 characters it will accept first 50 characters" time="0.749">
+<system-out><![CDATA[Given click the new password box............................................passed
+And send the very long more then 50 chars data..............................passed
+Then verfy the result long more then 50 chars...............................passed
+]]></system-out>
+</testcase>
+</testsuite>
