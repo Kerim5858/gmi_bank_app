@@ -75,10 +75,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager" selected="JUnit.Login_Runner">
     <configuration name="Login_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -111,6 +108,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="US_001_Registration_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US_001_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="US_003_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gmi_bank_app" />
       <extension name="coverage">
@@ -122,13 +131,13 @@
       <option name="PACKAGE_NAME" value="gmibank_team06.runners" />
       <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.US_003_Runner" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.US_001_Registration_Runner" />
+        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="JUnit.US_001_Runner" />
         <item itemvalue="JUnit.Login_Runner" />
         <item itemvalue="JUnit.US_003_Runner" />
         <item itemvalue="JUnit.Runner" />
@@ -153,12 +162,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="287" y="3" key="#Project_Structure" timestamp="1605229880878">
