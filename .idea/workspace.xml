@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="de31f2f8-e83f-4a6a-b3c4-a058e284adaf" name="Default Changelist" comment="" />
+    <list default="true" id="de31f2f8-e83f-4a6a-b3c4-a058e284adaf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/pages/US_004_005_Login_Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/runners/Login_Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/step_definitions/US_004_Login_SD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/step_definitions/US_005_Login_SD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US_004_Login.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US_005_Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank_team06/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/formatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/formatter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/jquery-3.4.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/jquery-3.4.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/gmibank_team06/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/gmibank_team06/utilities/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -17,27 +61,38 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1kCj7W84h7HHpSQcZnbgRcV5CVk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="JUnit.US_001_Registration_Runner">
+  <component name="RunManager" selected="JUnit.Login_Runner">
+    <configuration name="Login_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gmi_bank_app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gmibank_team06.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gmibank_team06.runners" />
+      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.Login_Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gmi_bank_app" />
       <extension name="coverage">
@@ -54,21 +109,18 @@
       </method>
     </configuration>
     <configuration name="US_001_Registration_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gmi_bank_app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gmibank_team06.runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="gmibank_team06.runners" />
-      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.US_001_Registration_Runner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="US_001_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US_003_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gmi_bank_app" />
       <extension name="coverage">
         <pattern>
@@ -77,17 +129,18 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="gmibank_team06.runners" />
-      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.US_001_Runner" />
+      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.US_003_Runner" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.US_001_Registration_Runner" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="JUnit.US_001_Runner" />
+        <item itemvalue="JUnit.Login_Runner" />
+        <item itemvalue="JUnit.US_003_Runner" />
+        <item itemvalue="JUnit.Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -104,34 +157,47 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="250" key="GridCell.Tab.0.bottom" timestamp="1605327468340">
+    <state x="287" y="3" key="#Project_Structure" timestamp="1605229880878">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="287" y="3" key="#Project_Structure/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605229880878" />
+    <state width="1491" height="2" key="GridCell.Tab.0.bottom" timestamp="1605369084320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605327468340" />
-    <state width="1493" height="250" key="GridCell.Tab.0.center" timestamp="1605327468340">
+    <state width="1491" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
+    <state width="1555" height="164" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
+    <state width="1491" height="2" key="GridCell.Tab.0.center" timestamp="1605369084320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605327468340" />
-    <state width="1493" height="250" key="GridCell.Tab.0.left" timestamp="1605327468340">
+    <state width="1491" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
+    <state width="1555" height="164" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
+    <state width="1491" height="2" key="GridCell.Tab.0.left" timestamp="1605369084320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605327468340" />
-    <state width="1493" height="250" key="GridCell.Tab.0.right" timestamp="1605327468340">
+    <state width="1491" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
+    <state width="1555" height="164" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
+    <state width="1491" height="2" key="GridCell.Tab.0.right" timestamp="1605369084320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605327468340" />
-    <state x="277" y="55" key="SettingsEditor" timestamp="1605214668136">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1491" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
+    <state width="1555" height="164" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
+    <state x="287" y="3" key="SettingsEditor" timestamp="1605230433884">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605214668136" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1605370834870">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1605370834870" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605239058189">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605239058189" />
+    <state x="287" y="3" key="SettingsEditor/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230433884" />
   </component>
 </project>
