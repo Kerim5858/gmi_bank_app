@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="9.259">
+<testcase classname="Registration" name="valid ssn" time="8.807">
+<system-out><![CDATA[Given user go to GMI home page..............................................passed
+And user click usericon.....................................................passed
+And user click register.....................................................passed
+Given user click ssn textbox  and enter ssn "873-12-6534"...................passed
+And user click name textbox and enter name "Ayse"...........................passed
+And user click lastname textbox and enter lastname "Demir"..................passed
+And user click address textbox and enter address "12 column way"............passed
+And user click mobile phone textbox and enter mobile phone number "197-912-1982".passed
+And user click username textbox and enter username "AyseD"..................passed
+And user click email textbox and enter email "ayse@gmail.com"...............passed
+And user click new password textbox and enter password "Ad192837?"..........passed
+And user click conf textbox and enter conf password "Ad192837?".............passed
+And user click register button..............................................passed
+Then user get success message "Registration saved! Please check your email for confirmation alert".passed
+]]></system-out>
+</testcase>
+</testsuite>
