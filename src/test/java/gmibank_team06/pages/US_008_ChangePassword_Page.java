@@ -25,6 +25,7 @@ public class US_008_ChangePassword_Page {
     public WebElement strengthBar;
     @FindBy(xpath = "//*[.='Password changed!']")
     public WebElement successMessage;
-
+    @FindBy(xpath = "//div[@class='Toastify__progress-bar Toastify__progress-bar--animated Toastify__progress-bar--error']")
+    public WebElement errorMessage;
 
 }
