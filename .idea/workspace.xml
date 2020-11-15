@@ -23,8 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de31f2f8-e83f-4a6a-b3c4-a058e284adaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/pages/Rastgele.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/pages/US_008_ChangePassword_Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/runners/US_008_PasswordChange_Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/step_definitions/US_008_PasswordChange_StepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US_008_ChangePassword.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/US_001_Registration.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/US_001_Registration.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/gmibank_team06/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/gmibank_team06/utilities/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,10 +70,14 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager" selected="JUnit.Login_Runner">
@@ -111,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="US_003_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="US_008_PasswordChange_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gmi_bank_app" />
       <extension name="coverage">
         <pattern>
@@ -120,22 +132,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="gmibank_team06.runners" />
-      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.US_003_Runner" />
+      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.US_008_PasswordChange_Runner" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Login_Runner" />
+        <item itemvalue="JUnit.US_008_PasswordChange_Runner" />
         <item itemvalue="JUnit.US_001_Registration_Runner" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="JUnit.US_001_Runner" />
-        <item itemvalue="JUnit.Login_Runner" />
-        <item itemvalue="JUnit.US_003_Runner" />
-        <item itemvalue="JUnit.Runner" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -166,29 +179,38 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="287" y="3" key="#Project_Structure/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605229880878" />
-    <state width="1491" height="2" key="GridCell.Tab.0.bottom" timestamp="1605369084320">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1017" y="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605399682520">
+      <screen x="0" y="23" width="1920" height="1131" />
+    </state>
+    <state x="1017" y="397" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1131@0.23.1920.1131" timestamp="1605399682520" />
+    <state width="1118" height="447" key="GridCell.Tab.0.bottom" timestamp="1605400173725">
+      <screen x="0" y="23" width="1920" height="1131" />
     </state>
     <state width="1491" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
     <state width="1555" height="164" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
-    <state width="1491" height="2" key="GridCell.Tab.0.center" timestamp="1605369084320">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1118" height="447" key="GridCell.Tab.0.bottom/0.23.1920.1131@0.23.1920.1131" timestamp="1605400173725" />
+    <state width="1118" height="447" key="GridCell.Tab.0.center" timestamp="1605400173724">
+      <screen x="0" y="23" width="1920" height="1131" />
     </state>
     <state width="1491" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
     <state width="1555" height="164" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
-    <state width="1491" height="2" key="GridCell.Tab.0.left" timestamp="1605369084320">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1118" height="447" key="GridCell.Tab.0.center/0.23.1920.1131@0.23.1920.1131" timestamp="1605400173724" />
+    <state width="1118" height="447" key="GridCell.Tab.0.left" timestamp="1605400173723">
+      <screen x="0" y="23" width="1920" height="1131" />
     </state>
     <state width="1491" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
     <state width="1555" height="164" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
-    <state width="1491" height="2" key="GridCell.Tab.0.right" timestamp="1605369084320">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1118" height="447" key="GridCell.Tab.0.left/0.23.1920.1131@0.23.1920.1131" timestamp="1605400173723" />
+    <state width="1118" height="447" key="GridCell.Tab.0.right" timestamp="1605400173724">
+      <screen x="0" y="23" width="1920" height="1131" />
     </state>
     <state width="1491" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
     <state width="1555" height="164" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
-    <state x="287" y="3" key="SettingsEditor" timestamp="1605230433884">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1118" height="447" key="GridCell.Tab.0.right/0.23.1920.1131@0.23.1920.1131" timestamp="1605400173724" />
+    <state x="344" y="27" key="SettingsEditor" timestamp="1605397833672">
+      <screen x="0" y="23" width="1920" height="1131" />
     </state>
     <state x="287" y="3" key="SettingsEditor/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230433884" />
+    <state x="344" y="27" key="SettingsEditor/0.23.1920.1131@0.23.1920.1131" timestamp="1605397833672" />
   </component>
 </project>

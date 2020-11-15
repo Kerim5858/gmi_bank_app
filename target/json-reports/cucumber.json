@@ -3,23 +3,6 @@
     "line": 2,
     "elements": [
       {
-<<<<<<< HEAD
-        "line": 5,
-        "name": "Homepage",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6634000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user go to GMI home page",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_go_to_GMI_home_page()"
-=======
         "line": 3,
         "name": "TC_005 gmiBank login Test",
         "description": "",
@@ -28,7 +11,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2020-11-14T15:55:45.352Z",
+        "start_timestamp": "2020-11-15T00:29:12.852Z",
         "line": 4,
         "name": "Go to login page negativePage",
         "description": "",
@@ -38,97 +21,33 @@
         "steps": [
           {
             "result": {
-              "duration": 10523000000,
+              "duration": 3511000000,
               "status": "passed"
             },
             "line": 5,
             "name": "user is on the gmiBank page",
             "match": {
               "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_is_on_the_gmiBank_page()"
->>>>>>> master
             },
             "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 66000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click usericon",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_usericon()"
-=======
-              "duration": 60000000,
+              "duration": 55000000,
               "status": "passed"
             },
             "line": 6,
             "name": "Click on the login",
             "match": {
               "location": "gmibank_team06.step_definitions.US_004_Login_SD.click_on_the_login()"
->>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 100000000,
+              "duration": 78000000,
               "status": "passed"
             },
-<<<<<<< HEAD
-            "line": 9,
-            "name": "user click register",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_register()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-14T00:09:52.191Z",
-        "line": 28,
-        "name": "valid ssn",
-        "description": "",
-        "id": "registration;valid-ssn;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 171000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user click ssn textbox  and enter ssn \"873-12-6534\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"873-12-6534\"",
-                  "offset": 38
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_ssn_textbox_and_enter_ssn(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 147000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click name textbox and enter name \"Ayse\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ayse\"",
-                  "offset": 39
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_name_textbox_and_enter_name(java.lang.String)"
-=======
             "line": 7,
             "name": "Click on the sign in",
             "match": {
@@ -152,7 +71,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2020-11-14T15:55:56.129Z",
+        "start_timestamp": "2020-11-15T00:29:16.575Z",
         "line": 11,
         "name": "Negative  username test",
         "description": "",
@@ -162,7 +81,7 @@
         "steps": [
           {
             "result": {
-              "duration": 76000000,
+              "duration": 203000000,
               "status": "passed"
             },
             "line": 12,
@@ -174,7 +93,7 @@
           },
           {
             "result": {
-              "duration": 115000000,
+              "duration": 184000000,
               "status": "passed"
             },
             "line": 13,
@@ -186,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 52000000,
+              "duration": 62000000,
               "status": "passed"
             },
             "line": 14,
@@ -198,7 +117,7 @@
           },
           {
             "result": {
-              "duration": 3360000000,
+              "duration": 767000000,
               "status": "passed"
             },
             "line": 15,
@@ -227,7 +146,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2020-11-14T15:55:59.742Z",
+        "start_timestamp": "2020-11-15T00:29:17.802Z",
         "line": 19,
         "name": "Negative password test",
         "description": "",
@@ -237,91 +156,43 @@
         "steps": [
           {
             "result": {
-              "duration": 64000000,
+              "duration": 168000000,
               "status": "passed"
             },
             "line": 20,
             "name": "User should be valid username",
             "match": {
               "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_should_be_valid_username()"
->>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 113000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user click lastname textbox and enter lastname \"Demir\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Demir\"",
-                  "offset": 47
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_lastname_textbox_and_enter_lastname(java.lang.String)"
-=======
-              "duration": 67000000,
+              "duration": 158000000,
               "status": "passed"
             },
             "line": 21,
             "name": "User should be invalid password",
             "match": {
               "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_invalid_password()"
->>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 131000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user click address textbox and enter address \"12 column way\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"12 column way\"",
-                  "offset": 45
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_address_textbox_and_enter_address(java.lang.String)"
-=======
-              "duration": 54000000,
+              "duration": 41000000,
               "status": "passed"
             },
             "line": 22,
             "name": "User click sing in button",
             "match": {
               "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_click_sing_in_button()"
->>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 122000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user click mobile phone textbox and enter mobile phone number \"197-912-1982\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"197-912-1982\"",
-                  "offset": 62
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_mobile_phone_textbox_and_enter_mobile_phone_number(java.lang.String)"
-=======
-              "duration": 30000000,
+              "duration": 677000000,
               "status": "passed"
             },
             "line": 23,
@@ -350,7 +221,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2020-11-14T15:55:59.961Z",
+        "start_timestamp": "2020-11-15T00:29:18.858Z",
         "line": 28,
         "name": "Negative username and password test",
         "description": "",
@@ -360,91 +231,43 @@
         "steps": [
           {
             "result": {
-              "duration": 55000000,
+              "duration": 159000000,
               "status": "passed"
             },
             "line": 29,
             "name": "User should be invalid username",
             "match": {
               "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_invalid_username()"
->>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 149000000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user click username textbox and enter username \"AyseD\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"AyseD\"",
-                  "offset": 47
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_username_textbox_and_enter_username(java.lang.String)"
-=======
-              "duration": 51000000,
+              "duration": 49000000,
               "status": "passed"
             },
             "line": 30,
             "name": "User should be invalid password",
             "match": {
               "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_invalid_password()"
->>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 194000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user click email textbox and enter email \"ayse@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ayse@gmail.com\"",
-                  "offset": 41
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_email_textbox_and_enter_email(java.lang.String)"
-=======
-              "duration": 69000000,
+              "duration": 146000000,
               "status": "passed"
             },
             "line": 31,
             "name": "User click sing in button",
             "match": {
               "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_click_sing_in_button()"
->>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 124000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user click new password textbox and enter password \"Ad192837?\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ad192837?\"",
-                  "offset": 51
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_new_password_textbox_and_enter_password(java.lang.String)"
-=======
-              "duration": 1079000000,
+              "duration": 666000000,
               "status": "passed"
             },
             "line": 32,
@@ -473,7 +296,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2020-11-14T15:56:01.223Z",
+        "start_timestamp": "2020-11-15T00:29:19.889Z",
         "line": 36,
         "name": "Forget password test",
         "description": "",
@@ -483,57 +306,31 @@
         "steps": [
           {
             "result": {
-              "duration": 90000000,
+              "duration": 170000000,
               "status": "passed"
             },
             "line": 37,
             "name": "Click on the Did you forget your password?",
             "match": {
               "location": "gmibank_team06.step_definitions.US_005_Login_SD.click_on_the_Did_you_forget_your_password()"
->>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 106000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "user click conf textbox and enter conf password \"Ad192837?\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ad192837?\"",
-                  "offset": 48
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_conf_textbox_and_enter_conf_password(java.lang.String)"
-=======
-              "duration": 115000000,
+              "duration": 87000000,
               "status": "passed"
             },
             "line": 38,
             "name": "provide email to checkbox",
             "match": {
               "location": "gmibank_team06.step_definitions.US_005_Login_SD.provide_email_to_checkbox()"
->>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 93000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user click register button",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_register_button()"
-=======
-              "duration": 64000000,
+              "duration": 48000000,
               "status": "passed"
             },
             "line": 39,
@@ -545,7 +342,7 @@
           },
           {
             "result": {
-              "duration": 37000000,
+              "duration": 27000000,
               "status": "passed"
             },
             "line": 40,
@@ -574,7 +371,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2020-11-14T15:56:01.537Z",
+        "start_timestamp": "2020-11-15T00:29:20.229Z",
         "line": 44,
         "name": "New Registration",
         "description": "",
@@ -584,7 +381,7 @@
         "steps": [
           {
             "result": {
-              "duration": 476000000,
+              "duration": 502000000,
               "status": "passed"
             },
             "line": 45,
@@ -596,7 +393,7 @@
           },
           {
             "result": {
-              "duration": 110000000,
+              "duration": 79000000,
               "status": "passed"
             },
             "line": 46,
@@ -608,7 +405,7 @@
           },
           {
             "result": {
-              "duration": 109000000,
+              "duration": 77000000,
               "status": "passed"
             },
             "line": 47,
@@ -620,73 +417,39 @@
           },
           {
             "result": {
-              "duration": 292000000,
+              "duration": 467000000,
               "status": "passed"
             },
             "line": 48,
             "name": "Click on the You don\u0027t have an account yet? Register a new account",
             "match": {
               "location": "gmibank_team06.step_definitions.US_005_Login_SD.click_on_the_You_don_t_have_an_account_yet_Register_a_new_account()"
->>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 576000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "user get success message \"Registration saved! Please check your email for confirmation alert\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Registration saved! Please check your email for confirmation alert\"",
-                  "offset": 25
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_get_success_message(java.lang.String)"
-=======
-              "duration": 54000000,
+              "duration": 23000000,
               "status": "passed"
             },
             "line": 49,
             "name": "User should be see Registration",
             "match": {
               "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_see_Registration()"
->>>>>>> master
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-<<<<<<< HEAD
-            "name": "@User_story_001"
-          },
-          {
-            "name": "@TC_US1_ssn"
-=======
             "name": "@gmiLogin_US_005"
           },
           {
             "name": "@gmiBankLoginTC_007"
->>>>>>> master
           }
         ]
       }
     ],
-<<<<<<< HEAD
-    "name": "Registration",
-    "description": "",
-    "id": "registration",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_001_Registration.feature",
-    "tags": [
-      {
-        "name": "@User_story_001",
-=======
     "name": "gmiBank Login",
     "description": "",
     "id": "gmibank-login",
@@ -695,7 +458,6 @@
     "tags": [
       {
         "name": "@gmiLogin_US_005",
->>>>>>> master
         "type": "Tag",
         "location": {
           "line": 1,
