@@ -22,12 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="de31f2f8-e83f-4a6a-b3c4-a058e284adaf" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/runners/US_014_New_Date.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/step_definitions/US_014_New_Date.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/resources/features/US_014_New_Date.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+
+    <list default="true" id="de31f2f8-e83f-4a6a-b3c4-a058e284adaf" name="Default Changelist" comment="" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,13 +68,21 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager" selected="JUnit.US_014_New_Date">
+  </component>
+
+  <component name="RunManager" selected="JUnit.US_008_PasswordChange_Runner">
+
     <configuration name="Login_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gmi_bank_app" />
       <extension name="coverage">
@@ -86,7 +98,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="US_001_Registration_Runner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gmi_bank_app" />
       <extension name="coverage">
         <pattern>
@@ -95,7 +107,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="gmibank_team06.runners" />
-      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.Runner" />
+      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.US_001_Registration_Runner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,13 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="US_001_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="US_014_New_Date" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="US_008_PasswordChange_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gmi_bank_app" />
       <extension name="coverage">
         <pattern>
@@ -122,19 +128,54 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="gmibank_team06.runners" />
+      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.US_008_PasswordChange_Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+
+    <configuration name="US_014_New_Date" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    </configuration>
+
+    <configuration name="US_008_PasswordChange_StepDef.logIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
+      <module name="gmi_bank_app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gmibank_team06.step_definitions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+
+      <option name="PACKAGE_NAME" value="gmibank_team06.runners" />
       <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.US_014_New_Date" />
       <option name="TEST_OBJECT" value="class" />
+
+      <option name="PACKAGE_NAME" value="gmibank_team06.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="gmibank_team06.step_definitions.US_008_PasswordChange_StepDef" />
+      <option name="METHOD_NAME" value="logIn" />
+      <option name="TEST_OBJECT" value="method" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+
         <item itemvalue="JUnit.US_014_New_Date" />
         <item itemvalue="JUnit.US_001_Registration_Runner" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="JUnit.US_001_Runner" />
         <item itemvalue="JUnit.Login_Runner" />
+
+        <item itemvalue="JUnit.US_008_PasswordChange_Runner" />
+        <item itemvalue="JUnit.US_001_Registration_Runner (1)" />
+        <item itemvalue="JUnit.US_008_PasswordChange_StepDef.logIn" />
+        <item itemvalue="JUnit.Login_Runner" />
+        <item itemvalue="JUnit.US_001_Registration_Runner" />
+
       </list>
     </recent_temporary>
   </component>
@@ -169,6 +210,7 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="287" y="3" key="#Project_Structure/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605229880878" />
+
     <state x="437" y="246" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605466123822">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
@@ -176,26 +218,40 @@
     <state width="1491" height="2" key="GridCell.Tab.0.bottom" timestamp="1605369084320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+
+    <state x="1017" y="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605399682520">
+      <screen x="0" y="23" width="1920" height="1131" />
+    </state>
+    <state x="1017" y="397" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1131@0.23.1920.1131" timestamp="1605399682520" />
+    <state width="1878" height="430" key="GridCell.Tab.0.bottom" timestamp="1605473769472">
+      <screen x="0" y="23" width="1920" height="1131" />
+
+    </state>
     <state width="1491" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
     <state width="1555" height="164" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
-    <state width="1491" height="2" key="GridCell.Tab.0.center" timestamp="1605369084320">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1878" height="430" key="GridCell.Tab.0.bottom/0.23.1920.1131@0.23.1920.1131" timestamp="1605473769472" />
+    <state width="1878" height="430" key="GridCell.Tab.0.center" timestamp="1605473769471">
+      <screen x="0" y="23" width="1920" height="1131" />
     </state>
     <state width="1491" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
     <state width="1555" height="164" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
-    <state width="1491" height="2" key="GridCell.Tab.0.left" timestamp="1605369084320">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1878" height="430" key="GridCell.Tab.0.center/0.23.1920.1131@0.23.1920.1131" timestamp="1605473769471" />
+    <state width="1878" height="430" key="GridCell.Tab.0.left" timestamp="1605473769471">
+      <screen x="0" y="23" width="1920" height="1131" />
     </state>
     <state width="1491" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
     <state width="1555" height="164" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
-    <state width="1491" height="2" key="GridCell.Tab.0.right" timestamp="1605369084320">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1878" height="430" key="GridCell.Tab.0.left/0.23.1920.1131@0.23.1920.1131" timestamp="1605473769471" />
+    <state width="1878" height="430" key="GridCell.Tab.0.right" timestamp="1605473769472">
+      <screen x="0" y="23" width="1920" height="1131" />
     </state>
     <state width="1491" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
     <state width="1555" height="164" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
-    <state x="287" y="3" key="SettingsEditor" timestamp="1605230433884">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1878" height="430" key="GridCell.Tab.0.right/0.23.1920.1131@0.23.1920.1131" timestamp="1605473769472" />
+    <state x="344" y="27" key="SettingsEditor" timestamp="1605397833672">
+      <screen x="0" y="23" width="1920" height="1131" />
     </state>
     <state x="287" y="3" key="SettingsEditor/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230433884" />
+    <state x="344" y="27" key="SettingsEditor/0.23.1920.1131@0.23.1920.1131" timestamp="1605397833672" />
   </component>
 </project>
