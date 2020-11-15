@@ -1,64 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="9.259">
-<testcase classname="Registration" name="valid ssn" time="8.807">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="16.572">
+<testcase classname="Date" name="go to Create or edit a Customer" time="10.584">
 <system-out><![CDATA[Given user go to GMI home page..............................................passed
-And user click usericon.....................................................passed
-And user click register.....................................................passed
-Given user click ssn textbox  and enter ssn "873-12-6534"...................passed
-And user click name textbox and enter name "Ayse"...........................passed
-And user click lastname textbox and enter lastname "Demir"..................passed
-And user click address textbox and enter address "12 column way"............passed
-And user click mobile phone textbox and enter mobile phone number "197-912-1982".passed
-And user click username textbox and enter username "AyseD"..................passed
-And user click email textbox and enter email "ayse@gmail.com"...............passed
-And user click new password textbox and enter password "Ad192837?"..........passed
-And user click conf textbox and enter conf password "Ad192837?".............passed
-And user click register button..............................................passed
-Then user get success message "Registration saved! Please check your email for confirmation alert".passed
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="17.55">
-<testcase classname="gmiBank Login" name="Go to login page negativePage" time="10.763">
-<system-out><![CDATA[Given user is on the gmiBank page...........................................passed
-And Click on the login......................................................passed
-And Click on the sign in....................................................passed
+And user click sig in button................................................passed
+And user enter valid username...............................................passed
+And user enter valid password...............................................passed
+And user click sign in button...............................................passed
+And user click my operation.................................................passed
+And user click manage Customer..............................................passed
+Then user click Create a new Customer button................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="gmiBank Login" name="Negative  username test" time="3.607">
-<system-out><![CDATA[And User should be invalid username.........................................passed
-And User should be valid password...........................................passed
-And User click sing in button...............................................passed
-Then Then i should see the error message....................................passed
+<testcase classname="Date" name="negative" time="0.877">
+<system-out><![CDATA[Given user Select previous day..............................................passed
+And Click Save..............................................................passed
+Then system should give error message.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="gmiBank Login" name="Negative password test" time="0.216">
-<system-out><![CDATA[And User should be valid username...........................................passed
-And User should be invalid password.........................................passed
-And User click sing in button...............................................passed
-Then Then I should see the error message1...................................passed
+<testcase classname="Date" name="positive" time="0.335">
+<system-out><![CDATA[Given system should give Selected current date..............................passed
+And Click Save..............................................................passed
+Then verify current date and system date....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="gmiBank Login" name="Negative username and password test" time="1.256">
-<system-out><![CDATA[And User should be invalid username.........................................passed
-And User should be invalid password.........................................passed
-And User click sing in button...............................................passed
-Then Then I should see the error message2...................................passed
+<testcase classname="Date" name="User" time="1.241">
+<system-out><![CDATA[Given user leave userTextBox blank..........................................passed
+And User gets error message.................................................passed
+And user click save button..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="gmiBank Login" name="Forget password test" time="0.308">
-<system-out><![CDATA[And Click on the Did you forget your password?..............................passed
-And provide email to checkbox...............................................passed
-And Click on the Reset password.............................................passed
-Then I should see the message reset your password...........................passed
+<testcase classname="Date" name="User_positive" time="0.623">
+<system-out><![CDATA[Then user select valid date.................................................passed
+And user click save button..................................................passed
+Then verify valid data......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="gmiBank Login" name="New Registration" time="1.043">
-<system-out><![CDATA[Given user is on the gmiBank page...........................................passed
-And Click on the login......................................................passed
-And Click on the sign in....................................................passed
-And Click on the You don't have an account yet? Register a new account......passed
-Then User should be see Registration........................................passed
->>>>>>> master
+<testcase classname="Date" name="Account_negative" time="0.985">
+<system-out><![CDATA[Given user leave accountTextBox blank.......................................passed
+And user click save button..................................................passed
+Then User gets error message................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Date" name="User_positive" time="0.519">
+<system-out><![CDATA[Then user select valid date.................................................passed
+And user click save button..................................................passed
+Then verify valid data......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Date" name="Zelle_no_click" time="0.386">
+<system-out><![CDATA[And user doesn't click......................................................passed
+Then user verify radio button...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Date" name="Zelle_click" time="0.297">
+<system-out><![CDATA[Given user click Zelle button...............................................passed
+Then User verify radio button...............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
