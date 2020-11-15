@@ -91,10 +91,12 @@
   </component>
 
   <component name="RunManager" selected="JUnit.US_008_PasswordChange_Runner">
+  </component>
 
 
 
   <component name="RunManager" selected="JUnit.US_008_PasswordChange_Runner">
+  </component>
 
   <component name="RunManager" selected="JUnit.US_014_New_Date">
 
@@ -156,9 +158,11 @@
     </configuration>
 
     <configuration name="US_008_PasswordChange_StepDef.logIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    </configuration>
 
 
     <configuration name="US_008_PasswordChange_StepDef.logIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    </configuration>
 
     <configuration name="US_014_New_Date" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
 
@@ -273,6 +277,7 @@
     <state x="1017" y="397" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1131@0.23.1920.1131" timestamp="1605399682520" />
     <state width="1878" height="430" key="GridCell.Tab.0.bottom" timestamp="1605473769472">
       <screen x="0" y="23" width="1920" height="1131" />
+    </state>
 
 
 
