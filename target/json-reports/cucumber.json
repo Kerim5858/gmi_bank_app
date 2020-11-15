@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-15T19:00:18.704Z",
+        "start_timestamp": "2020-11-15T20:59:21.886Z",
         "line": 5,
         "name": "TC_US8_001\tThe old password should not be used",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4563000000,
+              "duration": 3765000000,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 229000000,
+              "duration": 222000000,
               "status": "passed"
             },
             "line": 7,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 66000000,
+              "duration": 67000000,
               "status": "passed"
             },
             "line": 8,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 128000000,
+              "duration": 111000000,
               "status": "passed"
             },
             "line": 9,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 40000000,
+              "duration": 42000000,
               "status": "passed"
             },
             "line": 10,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 46000000,
+              "duration": 48000000,
               "status": "passed"
             },
             "line": 11,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 59000000,
+              "duration": 61000000,
               "status": "passed"
             },
             "line": 12,
@@ -121,7 +121,7 @@
           },
           {
             "result": {
-              "duration": 57000000,
+              "duration": 56000000,
               "status": "passed"
             },
             "line": 15,
@@ -133,8 +133,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027Toastify__progress-bar Toastify__progress-bar--animated Toastify__progress-bar--error\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MacBook-Pro-2.local\u0027, ip: \u00272601:156:81:ff0:0:0:0:dcd0%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.3\u0027, java.version: \u00271.8.0_252\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/1z/6vsyt_3d5dg...}, goog:chromeOptions: {debuggerAddress: localhost:63831}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: d0de5a9677918acc7f8b07cc2ac7d38e\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027Toastify__progress-bar Toastify__progress-bar--animated Toastify__progress-bar--error\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy14.getText(Unknown Source)\n\tat gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_message(US_008_PasswordChange_StepDef.java:81)\n\tat ✽.Verify the message(file:///Users/hasanimanli/IdeaProjects/gmi_bank_app/src/test/resources/features/US_008_ChangePassword.feature:16)\n",
-              "duration": 10027000000,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027Toastify__progress-bar Toastify__progress-bar--animated Toastify__progress-bar--error\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MacBook-Pro-2.local\u0027, ip: \u00272601:156:81:ff0:0:0:0:dcd0%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.3\u0027, java.version: \u00271.8.0_252\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/1z/6vsyt_3d5dg...}, goog:chromeOptions: {debuggerAddress: localhost:51243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 60dbb8fdb65aa1cc72bd7c7ff058b4dc\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027Toastify__progress-bar Toastify__progress-bar--animated Toastify__progress-bar--error\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy14.getText(Unknown Source)\n\tat gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_message(US_008_PasswordChange_StepDef.java:81)\n\tat ✽.Verify the message(file:///Users/hasanimanli/IdeaProjects/gmi_bank_app/src/test/resources/features/US_008_ChangePassword.feature:16)\n",
+              "duration": 10041000000,
               "status": "failed"
             },
             "line": 16,
@@ -155,7 +155,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-15T19:00:34.116Z",
+        "start_timestamp": "2020-11-15T20:59:36.490Z",
         "line": 19,
         "name": "TC_US8_002 There should be at least 1 lowercase char for stronger password and",
         "description": "  see the level chart change accordingly",
@@ -165,7 +165,7 @@
         "steps": [
           {
             "result": {
-              "duration": 394000000,
+              "duration": 382000000,
               "status": "passed"
             },
             "line": 21,
@@ -177,7 +177,7 @@
           },
           {
             "result": {
-              "duration": 188000000,
+              "duration": 167000000,
               "status": "passed"
             },
             "line": 22,
@@ -189,7 +189,7 @@
           },
           {
             "result": {
-              "duration": 40000000,
+              "duration": 38000000,
               "status": "passed"
             },
             "line": 23,
@@ -201,7 +201,7 @@
           },
           {
             "result": {
-              "duration": 80000000,
+              "duration": 69000000,
               "status": "passed"
             },
             "line": 24,
@@ -213,7 +213,7 @@
           },
           {
             "result": {
-              "duration": 43000000,
+              "duration": 32000000,
               "status": "passed"
             },
             "line": 25,
@@ -225,7 +225,7 @@
           },
           {
             "result": {
-              "duration": 50000000,
+              "duration": 47000000,
               "status": "passed"
             },
             "line": 26,
@@ -237,7 +237,7 @@
           },
           {
             "result": {
-              "duration": 62000000,
+              "duration": 38000000,
               "status": "passed"
             },
             "line": 27,
@@ -249,7 +249,7 @@
           },
           {
             "result": {
-              "duration": 135000000,
+              "duration": 149000000,
               "status": "passed"
             },
             "line": 28,
@@ -270,7 +270,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-15T19:00:35.124Z",
+        "start_timestamp": "2020-11-15T20:59:37.431Z",
         "line": 31,
         "name": "TC_US8_003 Without at least 1 lowercase char see the level chart change accordingly",
         "description": "",
@@ -280,7 +280,7 @@
         "steps": [
           {
             "result": {
-              "duration": 373000000,
+              "duration": 376000000,
               "status": "passed"
             },
             "line": 32,
@@ -292,7 +292,7 @@
           },
           {
             "result": {
-              "duration": 44000000,
+              "duration": 41000000,
               "status": "passed"
             },
             "line": 33,
@@ -304,7 +304,7 @@
           },
           {
             "result": {
-              "duration": 30000000,
+              "duration": 37000000,
               "status": "passed"
             },
             "line": 34,
@@ -316,7 +316,7 @@
           },
           {
             "result": {
-              "duration": 64000000,
+              "duration": 60000000,
               "status": "passed"
             },
             "line": 35,
@@ -328,7 +328,7 @@
           },
           {
             "result": {
-              "duration": 40000000,
+              "duration": 37000000,
               "status": "passed"
             },
             "line": 36,
@@ -340,7 +340,7 @@
           },
           {
             "result": {
-              "duration": 162000000,
+              "duration": 167000000,
               "status": "passed"
             },
             "line": 37,
@@ -352,7 +352,7 @@
           },
           {
             "result": {
-              "duration": 41000000,
+              "duration": 35000000,
               "status": "passed"
             },
             "line": 38,
@@ -364,7 +364,7 @@
           },
           {
             "result": {
-              "duration": 241000000,
+              "duration": 234000000,
               "status": "passed"
             },
             "line": 39,
@@ -385,7 +385,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-15T19:00:36.131Z",
+        "start_timestamp": "2020-11-15T20:59:38.434Z",
         "line": 42,
         "name": "TC_US8_004\tThere should be at least 1 Uppercase char and see the level  chart change accordingly",
         "description": "",
@@ -395,7 +395,7 @@
         "steps": [
           {
             "result": {
-              "duration": 383000000,
+              "duration": 377000000,
               "status": "passed"
             },
             "line": 43,
@@ -407,7 +407,7 @@
           },
           {
             "result": {
-              "duration": 43000000,
+              "duration": 40000000,
               "status": "passed"
             },
             "line": 44,
@@ -419,7 +419,7 @@
           },
           {
             "result": {
-              "duration": 34000000,
+              "duration": 31000000,
               "status": "passed"
             },
             "line": 45,
@@ -431,7 +431,7 @@
           },
           {
             "result": {
-              "duration": 62000000,
+              "duration": 66000000,
               "status": "passed"
             },
             "line": 46,
@@ -443,7 +443,7 @@
           },
           {
             "result": {
-              "duration": 50000000,
+              "duration": 39000000,
               "status": "passed"
             },
             "line": 47,
@@ -455,7 +455,7 @@
           },
           {
             "result": {
-              "duration": 50000000,
+              "duration": 49000000,
               "status": "passed"
             },
             "line": 48,
@@ -467,7 +467,7 @@
           },
           {
             "result": {
-              "duration": 37000000,
+              "duration": 41000000,
               "status": "passed"
             },
             "line": 49,
@@ -479,7 +479,7 @@
           },
           {
             "result": {
-              "duration": 113000000,
+              "duration": 119000000,
               "status": "passed"
             },
             "line": 50,
@@ -500,7 +500,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-15T19:00:36.918Z",
+        "start_timestamp": "2020-11-15T20:59:39.208Z",
         "line": 53,
         "name": "TC_US8_005 Without at least 1 Uppercase char see the level  chart change accordingly",
         "description": "",
@@ -510,7 +510,7 @@
         "steps": [
           {
             "result": {
-              "duration": 378000000,
+              "duration": 386000000,
               "status": "passed"
             },
             "line": 54,
@@ -534,7 +534,7 @@
           },
           {
             "result": {
-              "duration": 35000000,
+              "duration": 32000000,
               "status": "passed"
             },
             "line": 56,
@@ -546,7 +546,7 @@
           },
           {
             "result": {
-              "duration": 65000000,
+              "duration": 64000000,
               "status": "passed"
             },
             "line": 57,
@@ -558,7 +558,7 @@
           },
           {
             "result": {
-              "duration": 39000000,
+              "duration": 41000000,
               "status": "passed"
             },
             "line": 58,
@@ -570,7 +570,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 47000000,
               "status": "passed"
             },
             "line": 59,
@@ -582,7 +582,7 @@
           },
           {
             "result": {
-              "duration": 35000000,
+              "duration": 40000000,
               "status": "passed"
             },
             "line": 60,
@@ -594,7 +594,7 @@
           },
           {
             "result": {
-              "duration": 114000000,
+              "duration": 118000000,
               "status": "passed"
             },
             "line": 61,
@@ -615,7 +615,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-15T19:00:37.695Z",
+        "start_timestamp": "2020-11-15T20:59:39.994Z",
         "line": 64,
         "name": "TC_US8_006\tThere should be at least 1 digit  and see the level chart change accordingly",
         "description": "",
@@ -625,7 +625,7 @@
         "steps": [
           {
             "result": {
-              "duration": 380000000,
+              "duration": 381000000,
               "status": "passed"
             },
             "line": 65,
@@ -637,7 +637,7 @@
           },
           {
             "result": {
-              "duration": 39000000,
+              "duration": 42000000,
               "status": "passed"
             },
             "line": 66,
@@ -649,7 +649,7 @@
           },
           {
             "result": {
-              "duration": 34000000,
+              "duration": 39000000,
               "status": "passed"
             },
             "line": 67,
@@ -661,7 +661,7 @@
           },
           {
             "result": {
-              "duration": 58000000,
+              "duration": 60000000,
               "status": "passed"
             },
             "line": 68,
@@ -673,7 +673,7 @@
           },
           {
             "result": {
-              "duration": 36000000,
+              "duration": 34000000,
               "status": "passed"
             },
             "line": 69,
@@ -685,7 +685,7 @@
           },
           {
             "result": {
-              "duration": 50000000,
+              "duration": 46000000,
               "status": "passed"
             },
             "line": 70,
@@ -697,7 +697,7 @@
           },
           {
             "result": {
-              "duration": 39000000,
+              "duration": 38000000,
               "status": "passed"
             },
             "line": 71,
@@ -709,7 +709,7 @@
           },
           {
             "result": {
-              "duration": 120000000,
+              "duration": 111000000,
               "status": "passed"
             },
             "line": 72,
@@ -730,7 +730,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-15T19:00:38.468Z",
+        "start_timestamp": "2020-11-15T20:59:40.763Z",
         "line": 75,
         "name": "TC_US8_007\tWithout at least 1 digit see the level  chart change accordingly",
         "description": "",
@@ -740,7 +740,7 @@
         "steps": [
           {
             "result": {
-              "duration": 378000000,
+              "duration": 382000000,
               "status": "passed"
             },
             "line": 76,
@@ -752,7 +752,7 @@
           },
           {
             "result": {
-              "duration": 38000000,
+              "duration": 40000000,
               "status": "passed"
             },
             "line": 77,
@@ -764,7 +764,7 @@
           },
           {
             "result": {
-              "duration": 33000000,
+              "duration": 32000000,
               "status": "passed"
             },
             "line": 78,
@@ -776,7 +776,7 @@
           },
           {
             "result": {
-              "duration": 60000000,
+              "duration": 54000000,
               "status": "passed"
             },
             "line": 79,
@@ -788,7 +788,7 @@
           },
           {
             "result": {
-              "duration": 38000000,
+              "duration": 39000000,
               "status": "passed"
             },
             "line": 80,
@@ -800,7 +800,7 @@
           },
           {
             "result": {
-              "duration": 47000000,
+              "duration": 51000000,
               "status": "passed"
             },
             "line": 81,
@@ -824,7 +824,7 @@
           },
           {
             "result": {
-              "duration": 121000000,
+              "duration": 125000000,
               "status": "passed"
             },
             "line": 83,
@@ -845,7 +845,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-15T19:00:39.238Z",
+        "start_timestamp": "2020-11-15T20:59:41.540Z",
         "line": 86,
         "name": "TC_US8_008\tThere should be at least 1 special char and see the level bar change accordingly",
         "description": "",
@@ -855,7 +855,7 @@
         "steps": [
           {
             "result": {
-              "duration": 376000000,
+              "duration": 373000000,
               "status": "passed"
             },
             "line": 87,
@@ -867,7 +867,7 @@
           },
           {
             "result": {
-              "duration": 39000000,
+              "duration": 36000000,
               "status": "passed"
             },
             "line": 88,
@@ -879,7 +879,7 @@
           },
           {
             "result": {
-              "duration": 33000000,
+              "duration": 40000000,
               "status": "passed"
             },
             "line": 89,
@@ -891,7 +891,7 @@
           },
           {
             "result": {
-              "duration": 58000000,
+              "duration": 56000000,
               "status": "passed"
             },
             "line": 90,
@@ -903,7 +903,7 @@
           },
           {
             "result": {
-              "duration": 41000000,
+              "duration": 46000000,
               "status": "passed"
             },
             "line": 91,
@@ -915,7 +915,7 @@
           },
           {
             "result": {
-              "duration": 49000000,
+              "duration": 46000000,
               "status": "passed"
             },
             "line": 92,
@@ -927,7 +927,7 @@
           },
           {
             "result": {
-              "duration": 44000000,
+              "duration": 37000000,
               "status": "passed"
             },
             "line": 93,
@@ -939,7 +939,7 @@
           },
           {
             "result": {
-              "duration": 115000000,
+              "duration": 118000000,
               "status": "passed"
             },
             "line": 94,
@@ -960,7 +960,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-15T19:00:40.009Z",
+        "start_timestamp": "2020-11-15T20:59:42.308Z",
         "line": 97,
         "name": "TC_US8_009\tWithout at least 1 special char see the level bar change accordingly",
         "description": "",
@@ -970,7 +970,7 @@
         "steps": [
           {
             "result": {
-              "duration": 372000000,
+              "duration": 374000000,
               "status": "passed"
             },
             "line": 98,
@@ -982,7 +982,7 @@
           },
           {
             "result": {
-              "duration": 41000000,
+              "duration": 39000000,
               "status": "passed"
             },
             "line": 99,
@@ -994,7 +994,7 @@
           },
           {
             "result": {
-              "duration": 31000000,
+              "duration": 39000000,
               "status": "passed"
             },
             "line": 100,
@@ -1006,7 +1006,7 @@
           },
           {
             "result": {
-              "duration": 55000000,
+              "duration": 53000000,
               "status": "passed"
             },
             "line": 101,
@@ -1018,7 +1018,7 @@
           },
           {
             "result": {
-              "duration": 37000000,
+              "duration": 36000000,
               "status": "passed"
             },
             "line": 102,
@@ -1030,7 +1030,7 @@
           },
           {
             "result": {
-              "duration": 43000000,
+              "duration": 53000000,
               "status": "passed"
             },
             "line": 103,
@@ -1042,7 +1042,7 @@
           },
           {
             "result": {
-              "duration": 37000000,
+              "duration": 47000000,
               "status": "passed"
             },
             "line": 104,
@@ -1054,7 +1054,7 @@
           },
           {
             "result": {
-              "duration": 119000000,
+              "duration": 125000000,
               "status": "passed"
             },
             "line": 105,
@@ -1075,7 +1075,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-15T19:00:40.765Z",
+        "start_timestamp": "2020-11-15T20:59:43.089Z",
         "line": 108,
         "name": "TC_US8_010 There should be at least 7 chars for a stronger password",
         "description": "",
@@ -1085,7 +1085,7 @@
         "steps": [
           {
             "result": {
-              "duration": 378000000,
+              "duration": 372000000,
               "status": "passed"
             },
             "line": 109,
@@ -1097,7 +1097,7 @@
           },
           {
             "result": {
-              "duration": 47000000,
+              "duration": 40000000,
               "status": "passed"
             },
             "line": 110,
@@ -1109,7 +1109,7 @@
           },
           {
             "result": {
-              "duration": 36000000,
+              "duration": 34000000,
               "status": "passed"
             },
             "line": 111,
@@ -1121,7 +1121,7 @@
           },
           {
             "result": {
-              "duration": 63000000,
+              "duration": 66000000,
               "status": "passed"
             },
             "line": 112,
@@ -1139,7 +1139,7 @@
           },
           {
             "result": {
-              "duration": 44000000,
+              "duration": 43000000,
               "status": "passed"
             },
             "line": 113,
@@ -1151,7 +1151,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 62000000,
               "status": "passed"
             },
             "line": 114,
@@ -1169,7 +1169,7 @@
           },
           {
             "result": {
-              "duration": 41000000,
+              "duration": 37000000,
               "status": "passed"
             },
             "line": 115,
@@ -1181,7 +1181,7 @@
           },
           {
             "result": {
-              "duration": 117000000,
+              "duration": 128000000,
               "status": "passed"
             },
             "line": 116,
@@ -1208,7 +1208,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-15T19:00:41.559Z",
+        "start_timestamp": "2020-11-15T20:59:43.888Z",
         "line": 119,
         "name": "TC_US8_011\tLess than 7 chars see the level bar change accordingly",
         "description": "",
@@ -1218,7 +1218,7 @@
         "steps": [
           {
             "result": {
-              "duration": 372000000,
+              "duration": 376000000,
               "status": "passed"
             },
             "line": 120,
@@ -1230,7 +1230,7 @@
           },
           {
             "result": {
-              "duration": 54000000,
+              "duration": 47000000,
               "status": "passed"
             },
             "line": 121,
@@ -1242,7 +1242,7 @@
           },
           {
             "result": {
-              "duration": 47000000,
+              "duration": 46000000,
               "status": "passed"
             },
             "line": 122,
@@ -1254,7 +1254,7 @@
           },
           {
             "result": {
-              "duration": 47000000,
+              "duration": 52000000,
               "status": "passed"
             },
             "line": 123,
@@ -1272,7 +1272,7 @@
           },
           {
             "result": {
-              "duration": 47000000,
+              "duration": 39000000,
               "status": "passed"
             },
             "line": 124,
@@ -1284,7 +1284,7 @@
           },
           {
             "result": {
-              "duration": 57000000,
+              "duration": 56000000,
               "status": "passed"
             },
             "line": 125,
@@ -1302,7 +1302,7 @@
           },
           {
             "result": {
-              "duration": 47000000,
+              "duration": 42000000,
               "status": "passed"
             },
             "line": 126,
@@ -1341,7 +1341,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-15T19:00:42.368Z",
+        "start_timestamp": "2020-11-15T20:59:44.686Z",
         "line": 130,
         "name": "TC_US8_012\tThe new password should be confirmed",
         "description": "",
@@ -1351,7 +1351,7 @@
         "steps": [
           {
             "result": {
-              "duration": 380000000,
+              "duration": 378000000,
               "status": "passed"
             },
             "line": 131,
@@ -1363,7 +1363,7 @@
           },
           {
             "result": {
-              "duration": 40000000,
+              "duration": 35000000,
               "status": "passed"
             },
             "line": 132,
@@ -1375,7 +1375,7 @@
           },
           {
             "result": {
-              "duration": 33000000,
+              "duration": 37000000,
               "status": "passed"
             },
             "line": 133,
@@ -1387,7 +1387,7 @@
           },
           {
             "result": {
-              "duration": 50000000,
+              "duration": 54000000,
               "status": "passed"
             },
             "line": 134,
@@ -1399,7 +1399,7 @@
           },
           {
             "result": {
-              "duration": 42000000,
+              "duration": 39000000,
               "status": "passed"
             },
             "line": 135,
@@ -1411,7 +1411,7 @@
           },
           {
             "result": {
-              "duration": 48000000,
+              "duration": 55000000,
               "status": "passed"
             },
             "line": 136,
@@ -1423,7 +1423,7 @@
           },
           {
             "result": {
-              "duration": 37000000,
+              "duration": 45000000,
               "status": "passed"
             },
             "line": 137,
@@ -1435,7 +1435,7 @@
           },
           {
             "result": {
-              "duration": 33000000,
+              "duration": 30000000,
               "status": "passed"
             },
             "line": 138,
