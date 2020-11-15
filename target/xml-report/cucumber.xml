@@ -163,6 +163,62 @@ And Click New password confirmation.........................................pass
 And Re-enter new password as requested......................................passed
 And Click save..............................................................passed
 Then Verify the confirm message.............................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="16.572">
+<testcase classname="Date" name="go to Create or edit a Customer" time="10.584">
+<system-out><![CDATA[Given user go to GMI home page..............................................passed
+And user click sig in button................................................passed
+And user enter valid username...............................................passed
+And user enter valid password...............................................passed
+And user click sign in button...............................................passed
+And user click my operation.................................................passed
+And user click manage Customer..............................................passed
+Then user click Create a new Customer button................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Date" name="negative" time="0.877">
+<system-out><![CDATA[Given user Select previous day..............................................passed
+And Click Save..............................................................passed
+Then system should give error message.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Date" name="positive" time="0.335">
+<system-out><![CDATA[Given system should give Selected current date..............................passed
+And Click Save..............................................................passed
+Then verify current date and system date....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Date" name="User" time="1.241">
+<system-out><![CDATA[Given user leave userTextBox blank..........................................passed
+And User gets error message.................................................passed
+And user click save button..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Date" name="User_positive" time="0.623">
+<system-out><![CDATA[Then user select valid date.................................................passed
+And user click save button..................................................passed
+Then verify valid data......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Date" name="Account_negative" time="0.985">
+<system-out><![CDATA[Given user leave accountTextBox blank.......................................passed
+And user click save button..................................................passed
+Then User gets error message................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Date" name="User_positive" time="0.519">
+<system-out><![CDATA[Then user select valid date.................................................passed
+And user click save button..................................................passed
+Then verify valid data......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Date" name="Zelle_no_click" time="0.386">
+<system-out><![CDATA[And user doesn't click......................................................passed
+Then user verify radio button...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Date" name="Zelle_click" time="0.297">
+<system-out><![CDATA[Given user click Zelle button...............................................passed
+Then User verify radio button...............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

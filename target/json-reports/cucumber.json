@@ -3,6 +3,7 @@
     "line": 2,
     "elements": [
       {
+
         "start_timestamp": "2020-11-15T20:59:21.886Z",
         "line": 5,
         "name": "TC_US8_001\tThe old password should not be used",
@@ -795,11 +796,39 @@
             "name": "Click New password confirmation",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-15T18:58:44.809Z",
+        "line": 6,
+        "name": "go to Create or edit a Customer",
+        "description": "",
+        "id": "date;go-to-create-or-edit-a-customer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8714000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user go to GMI home page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_go_to_GMI_home_page()"
+
             },
             "keyword": "And "
           },
           {
             "result": {
+
               "duration": 51000000,
               "status": "passed"
             },
@@ -807,11 +836,21 @@
             "name": "Re-enter new password without digit",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_without_digit()"
+
+              "duration": 283000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click sig in button",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_sig_in_button()"
+
             },
             "keyword": "And "
           },
           {
             "result": {
+
               "duration": 41000000,
               "status": "passed"
             },
@@ -819,11 +858,20 @@
             "name": "Click save",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+
+              "duration": 189000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enter valid username",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_enter_valid_username()"
             },
             "keyword": "And "
           },
           {
             "result": {
+
               "duration": 125000000,
               "status": "passed"
             },
@@ -862,11 +910,33 @@
             "name": "Click Current password",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
+
+              "duration": 180000000,
+              "status": "passed"
             },
-            "keyword": "Given "
+            "line": 10,
+            "name": "user enter valid password",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_enter_valid_password()"
+            },
+            "keyword": "And "
           },
           {
             "result": {
+              "duration": 144000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user click sign in button",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_sign_in_button()"
+
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+
               "duration": 36000000,
               "status": "passed"
             },
@@ -874,11 +944,21 @@
             "name": "Enter old password tc7",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_tc7()"
+
+              "duration": 389000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click my operation",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_my_operation()"
+
             },
             "keyword": "And "
           },
           {
             "result": {
+
               "duration": 40000000,
               "status": "passed"
             },
@@ -922,11 +1002,69 @@
             "name": "Re-enter new password with special char",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_with_special_char()"
+
+              "duration": 133000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click manage Customer",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_manage_Customer()"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 390000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user click Create a new Customer button",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_Create_a_new_Customer_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User_story_014"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-15T18:58:55.419Z",
+        "line": 17,
+        "name": "negative",
+        "description": "",
+        "id": "date;negative",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 721000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user Select previous day",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_Select_previous_day()"
+
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+
               "duration": 37000000,
               "status": "passed"
             },
@@ -934,11 +1072,21 @@
             "name": "Click save",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+
+              "duration": 104000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click Save",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.click_Save()"
+
             },
             "keyword": "And "
           },
           {
             "result": {
+
               "duration": 118000000,
               "status": "passed"
             },
@@ -946,16 +1094,32 @@
             "name": "Verify the password with special char strength color",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_with_special_char_strength_color()"
+
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "system should give error message",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.system_should_give_error_message()"
+
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+
             "name": "@ChangePassword"
           },
           {
             "name": "@TC8"
+
+            "name": "@User_story_014"
+          },
+          {
+            "name": "@TC_014_Date1"
+
           }
         ]
       },
@@ -965,6 +1129,21 @@
         "name": "TC_US8_009\tWithout at least 1 special char see the level bar change accordingly",
         "description": "",
         "id": "password-segment-on-homepage-should-be-editable;tc-us8-009-without-at-least-1-special-char-see-the-level-bar-change-accordingly",
+
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-15T18:58:56.309Z",
+        "line": 23,
+        "name": "positive",
+        "description": "",
+        "id": "date;positive",
+
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -1013,11 +1192,21 @@
             "name": "Enter new password without special char",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_without_special_char()"
+
+              "duration": 240000000,
+              "status": "passed"
             },
-            "keyword": "And "
+            "line": 24,
+            "name": "system should give Selected current date",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.system_should_give_Selected_current_date()"
+
+            },
+            "keyword": "Given "
           },
           {
             "result": {
+
               "duration": 36000000,
               "status": "passed"
             },
@@ -1037,11 +1226,21 @@
             "name": "Re-enter new password without special char",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_without_special_char()"
+
+              "duration": 70000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Click Save",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.click_Save()"
+
             },
             "keyword": "And "
           },
           {
             "result": {
+
               "duration": 47000000,
               "status": "passed"
             },
@@ -1061,30 +1260,63 @@
             "name": "Verify the password without special char strength color",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_without_special_char_strength_color()"
+
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify current date and system date",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.verify_current_date_and_system_date()"
+
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+
             "name": "@ChangePassword"
           },
           {
             "name": "@TC9"
+
+            "name": "@User_story_014"
+          },
+          {
+            "name": "@TC_014_Date"
+
           }
         ]
       },
       {
+
         "start_timestamp": "2020-11-15T20:59:43.089Z",
         "line": 108,
         "name": "TC_US8_010 There should be at least 7 chars for a stronger password",
         "description": "",
         "id": "password-segment-on-homepage-should-be-editable;tc-us8-010-there-should-be-at-least-7-chars-for-a-stronger-password",
+
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-15T18:58:56.652Z",
+        "line": 29,
+        "name": "User",
+        "description": "",
+        "id": "date;user",
+
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+
               "duration": 372000000,
               "status": "passed"
             },
@@ -1146,11 +1378,21 @@
             "name": "Click New password confirmation",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+
+              "duration": 657000000,
+              "status": "passed"
             },
-            "keyword": "And "
+            "line": 30,
+            "name": "user leave userTextBox blank",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_leave_userTextBox_blank()"
+
+            },
+            "keyword": "Given "
           },
           {
             "result": {
+
               "duration": 62000000,
               "status": "passed"
             },
@@ -1176,11 +1418,21 @@
             "name": "Click save",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+
+              "duration": 415000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User gets error message",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_gets_error_message()"
+
             },
             "keyword": "And "
           },
           {
             "result": {
+
               "duration": 128000000,
               "status": "passed"
             },
@@ -1194,30 +1446,63 @@
                 }
               ],
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_with_at_least_chars_strength_color(java.lang.Integer)"
+
+              "duration": 166000000,
+              "status": "passed"
             },
-            "keyword": "Then "
+            "line": 32,
+            "name": "user click save button",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
+
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
+
             "name": "@ChangePassword"
           },
           {
             "name": "@TC10"
+
+            "name": "@User_story_014"
+          },
+          {
+            "name": "@TC_014_User"
+
           }
         ]
       },
       {
+
         "start_timestamp": "2020-11-15T20:59:43.888Z",
         "line": 119,
         "name": "TC_US8_011\tLess than 7 chars see the level bar change accordingly",
         "description": "",
         "id": "password-segment-on-homepage-should-be-editable;tc-us8-011-less-than-7-chars-see-the-level-bar-change-accordingly",
+
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-15T18:58:57.905Z",
+        "line": 35,
+        "name": "User_positive",
+        "description": "",
+        "id": "date;user-positive",
+
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+
               "duration": 376000000,
               "status": "passed"
             },
@@ -1237,11 +1522,21 @@
             "name": "Enter old password from tc10",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_from_tc10()"
+
+              "duration": 367000000,
+              "status": "passed"
             },
-            "keyword": "And "
+            "line": 36,
+            "name": "user select valid date",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_select_valid_date()"
+
+            },
+            "keyword": "Then "
           },
           {
             "result": {
+
               "duration": 46000000,
               "status": "passed"
             },
@@ -1267,11 +1562,21 @@
                 }
               ],
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_less_than_digit(java.lang.Integer)"
+
+              "duration": 184000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user click save button",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
+
             },
             "keyword": "And "
           },
           {
             "result": {
+
               "duration": 39000000,
               "status": "passed"
             },
@@ -1279,11 +1584,48 @@
             "name": "Click New password confirmation",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+
+              "duration": 69000000,
+              "status": "passed"
             },
-            "keyword": "And "
+            "line": 38,
+            "name": "verify valid data",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.verify_valid_data()"
+
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User_story_014"
           },
           {
+            "name": "@TC_014_User"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-15T18:58:58.538Z",
+        "line": 41,
+        "name": "Account_negative",
+        "description": "",
+        "id": "date;account-negative",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
             "result": {
+
               "duration": 56000000,
               "status": "passed"
             },
@@ -1309,11 +1651,33 @@
             "name": "Click save",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+
+              "duration": 431000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user leave accountTextBox blank",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_leave_accountTextBox_blank()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user click save button",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
+
             },
             "keyword": "And "
           },
           {
             "result": {
+
               "duration": 126000000,
               "status": "passed"
             },
@@ -1327,30 +1691,63 @@
                 }
               ],
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_with_less_than_digit_strength_color(java.lang.Integer)"
+
+              "duration": 387000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User gets error message",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_gets_error_message()"
+
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+
             "name": "@ChangePassword"
           },
           {
             "name": "@TC11"
+
+            "name": "@User_story_014"
+          },
+          {
+            "name": "@TC_014_Account"
+
           }
         ]
       },
       {
+
         "start_timestamp": "2020-11-15T20:59:44.686Z",
         "line": 130,
         "name": "TC_US8_012\tThe new password should be confirmed",
         "description": "",
         "id": "password-segment-on-homepage-should-be-editable;tc-us8-012-the-new-password-should-be-confirmed",
+
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-15T18:58:59.532Z",
+        "line": 48,
+        "name": "User_positive",
+        "description": "",
+        "id": "date;user-positive",
+
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+
               "duration": 378000000,
               "status": "passed"
             },
@@ -1358,11 +1755,21 @@
             "name": "Click Current password",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
+
+              "duration": 316000000,
+              "status": "passed"
             },
-            "keyword": "Given "
+            "line": 49,
+            "name": "user select valid date",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_select_valid_date()"
+
+            },
+            "keyword": "Then "
           },
           {
             "result": {
+
               "duration": 35000000,
               "status": "passed"
             },
@@ -1370,11 +1777,21 @@
             "name": "Enter old password from tc12",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_from_tc12()"
+
+              "duration": 162000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user click save button",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
+
             },
             "keyword": "And "
           },
           {
             "result": {
+
               "duration": 37000000,
               "status": "passed"
             },
@@ -1382,11 +1799,48 @@
             "name": "Click New password",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password()"
+
+              "duration": 39000000,
+              "status": "passed"
             },
-            "keyword": "And "
+            "line": 51,
+            "name": "verify valid data",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.verify_valid_data()"
+
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User_story_014"
           },
           {
+            "name": "@TC_014_Account"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-15T18:59:00.061Z",
+        "line": 54,
+        "name": "Zelle_no_click",
+        "description": "",
+        "id": "date;zelle-no-click",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
             "result": {
+
               "duration": 54000000,
               "status": "passed"
             },
@@ -1394,11 +1848,21 @@
             "name": "Enter new password as requested",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_as_requested()"
+
+              "duration": 357000000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "user doesn\u0027t click",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_do_not_click()"
+
             },
             "keyword": "And "
           },
           {
             "result": {
+
               "duration": 39000000,
               "status": "passed"
             },
@@ -1442,20 +1906,88 @@
             "name": "Verify the confirm message",
             "match": {
               "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_confirm_message()"
+
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user verify radio button",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_verify_radio_button()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+            "name": "@User_story_014"
+          },
+          {
+            "name": "@TC_014_Zelle"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-15T18:59:00.453Z",
+        "line": 59,
+        "name": "Zelle_click",
+        "description": "",
+        "id": "date;zelle-click",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 274000000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "user click Zelle button",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_click_Zelle_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "User verify radio button",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_verify_radio_button1()"
+
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+
             "name": "@ChangePassword"
           },
           {
             "name": "@TC12"
+
+            "name": "@User_story_014"
+          },
+          {
+            "name": "@TC_014_Account"
+
           }
         ]
       }
     ],
+
     "name": "Password segment on Homepage should be editable",
     "description": "",
     "id": "password-segment-on-homepage-should-be-editable",
@@ -1464,6 +1996,16 @@
     "tags": [
       {
         "name": "@ChangePassword",
+
+    "name": "Date",
+    "description": "",
+    "id": "date",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US_014_New_Date.feature",
+    "tags": [
+      {
+        "name": "@User_story_014",
+
         "type": "Tag",
         "location": {
           "line": 1,
