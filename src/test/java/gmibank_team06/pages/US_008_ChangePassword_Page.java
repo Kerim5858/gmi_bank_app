@@ -23,7 +23,7 @@ public class US_008_ChangePassword_Page {
     public WebElement saveButton;
     @FindBy(id = "strengthBar")
     public WebElement strengthBar;
-    @FindBy(xpath = "//*[.='Password changed!']")
+    @FindBy(xpath = "//div[@class='Toastify__toast Toastify__toast--success toastify-toast']")
     public WebElement successMessage;
     @FindBy(xpath = "//div[@class='Toastify__progress-bar Toastify__progress-bar--animated Toastify__progress-bar--error']")
     public WebElement errorMessage;

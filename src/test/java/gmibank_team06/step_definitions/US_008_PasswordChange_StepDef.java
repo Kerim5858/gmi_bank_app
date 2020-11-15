@@ -11,13 +11,13 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class US_008_PasswordChange_StepDef {
 
     US_008_ChangePassword_Page US_008_ChangePassword_Page = new US_008_ChangePassword_Page();
     US_004_005_Login_Page login_page = new US_004_005_Login_Page();
     US_003_NewPassword_Page US_003 = new US_003_NewPassword_Page();
-    String successMessage = US_008_ChangePassword_Page.successMessage.getText();
-    String errorMessage = US_008_ChangePassword_Page.errorMessage.getText();
 
 
     @Given("Log in to the account")
@@ -75,15 +75,18 @@ public class US_008_PasswordChange_StepDef {
         US_008_ChangePassword_Page.saveButton.click();
     }
 
+
     @Then("Verify the message")
     public void verify_the_message() {
-
+        String errorMessage = US_008_ChangePassword_Page.errorMessage.getText();
         Assert.assertEquals("An error has occured! The password could not be changed.", errorMessage);
-        Driver.getDriver().navigate().refresh();
     }
 
     @Given("Enter old password from tc1")
     public void enter_old_password_from_tc1() {
+        US_008_ChangePassword_Page.currentPassword.clear();
+        US_008_ChangePassword_Page.newPassword.clear();
+        US_008_ChangePassword_Page.confirmPassword.clear();
         US_008_ChangePassword_Page.currentPassword.sendKeys(ConfigurationReader.getProperty("GMI_Costumer_valid_password"));
     }
 
@@ -100,7 +103,9 @@ public class US_008_PasswordChange_StepDef {
     @Then("Verify the password with lowercase strength color")
     public void verify_the_password_with_lowercase_strength_color() {
         Assert.assertTrue(US_003.strengthLevel_5.isDisplayed());
-        Driver.getDriver().navigate().refresh();
+        US_008_ChangePassword_Page.currentPassword.clear();
+        US_008_ChangePassword_Page.newPassword.clear();
+        US_008_ChangePassword_Page.confirmPassword.clear();
     }
 
     @Given("Enter old password from tc2")
@@ -117,12 +122,17 @@ public class US_008_PasswordChange_StepDef {
     @Given("Re-enter new password without lowercase")
     public void re_enter_new_password_without_lowercase() {
         US_008_ChangePassword_Page.confirmPassword.sendKeys("TESTER20-");
+        Driver.getDriver().manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
     }
+
 
     @Then("Verify the password without lowercase strength color")
     public void verify_the_password_without_lowercase_strength_color() {
         Assert.assertTrue(US_003.strengthLevel_4.isDisplayed());
-        Driver.getDriver().navigate().refresh();
+        US_008_ChangePassword_Page.currentPassword.clear();
+        US_008_ChangePassword_Page.newPassword.clear();
+        US_008_ChangePassword_Page.confirmPassword.clear();
+        Driver.getDriver().manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
     }
 
     @Given("Enter old password from tc3")
@@ -143,7 +153,10 @@ public class US_008_PasswordChange_StepDef {
     @Then("Verify the password with uppercase strength color")
     public void verify_the_password_with_uppercase_strength_color() {
         Assert.assertTrue(US_003.strengthLevel_5.isDisplayed());
-        Driver.getDriver().navigate().refresh();
+        US_008_ChangePassword_Page.currentPassword.clear();
+        US_008_ChangePassword_Page.newPassword.clear();
+        US_008_ChangePassword_Page.confirmPassword.clear();
+
     }
 
     @Given("Enter old password from tc4")
@@ -164,7 +177,9 @@ public class US_008_PasswordChange_StepDef {
     @Then("Verify the password without uppercase strength color")
     public void verify_the_password_without_uppercase_strength_color() {
         Assert.assertTrue(US_003.strengthLevel_4.isDisplayed());
-        Driver.getDriver().navigate().refresh();
+        US_008_ChangePassword_Page.currentPassword.clear();
+        US_008_ChangePassword_Page.newPassword.clear();
+        US_008_ChangePassword_Page.confirmPassword.clear();
     }
 
     @Given("Enter old password from tc5")
@@ -185,8 +200,9 @@ public class US_008_PasswordChange_StepDef {
     @Then("Verify the password with digit strength color")
     public void verify_the_password_with_digit_strength_color() {
         Assert.assertTrue(US_003.strengthLevel_5.isDisplayed());
-        Driver.getDriver().navigate().refresh();
-    }
+        US_008_ChangePassword_Page.currentPassword.clear();
+        US_008_ChangePassword_Page.newPassword.clear();
+        US_008_ChangePassword_Page.confirmPassword.clear();    }
 
     @Given("Enter old password from tc6")
     public void enter_old_password_from_tc6() {
@@ -206,8 +222,9 @@ public class US_008_PasswordChange_StepDef {
     @Then("Verify the password without digit strength color")
     public void verify_the_password_without_digit_strength_color() {
         Assert.assertTrue(US_003.strengthLevel_4.isDisplayed());
-        Driver.getDriver().navigate().refresh();
-    }
+        US_008_ChangePassword_Page.currentPassword.clear();
+        US_008_ChangePassword_Page.newPassword.clear();
+        US_008_ChangePassword_Page.confirmPassword.clear();    }
 
     @Given("Enter old password tc7")
     public void enter_old_password_tc7() {
@@ -227,8 +244,9 @@ public class US_008_PasswordChange_StepDef {
     @Then("Verify the password with special char strength color")
     public void verify_the_password_with_special_char_strength_color() {
         Assert.assertTrue(US_003.strengthLevel_5.isDisplayed());
-        Driver.getDriver().navigate().refresh();
-    }
+        US_008_ChangePassword_Page.currentPassword.clear();
+        US_008_ChangePassword_Page.newPassword.clear();
+        US_008_ChangePassword_Page.confirmPassword.clear();    }
 
     @Given("Enter old password from tc8")
     public void enter_old_password_from_tc8() {
@@ -248,8 +266,9 @@ public class US_008_PasswordChange_StepDef {
     @Then("Verify the password without special char strength color")
     public void verify_the_password_without_special_char_strength_color() {
         Assert.assertTrue(US_003.strengthLevel_4.isDisplayed());
-        Driver.getDriver().navigate().refresh();
-    }
+        US_008_ChangePassword_Page.currentPassword.clear();
+        US_008_ChangePassword_Page.newPassword.clear();
+        US_008_ChangePassword_Page.confirmPassword.clear();    }
 
     @Given("Enter old password from tc9")
     public void enter_old_password_from_tc9() {
@@ -269,8 +288,9 @@ public class US_008_PasswordChange_StepDef {
     @Then("Verify the password with at least {int} chars strength color")
     public void verify_the_password_with_at_least_chars_strength_color(Integer int1) {
         Assert.assertTrue(US_003.strengthLevel_5.isDisplayed());
-        Driver.getDriver().navigate().refresh();
-    }
+        US_008_ChangePassword_Page.currentPassword.clear();
+        US_008_ChangePassword_Page.newPassword.clear();
+        US_008_ChangePassword_Page.confirmPassword.clear();    }
 
     @Given("Enter old password from tc10")
     public void enter_old_password_from_tc10() {
@@ -290,7 +310,9 @@ public class US_008_PasswordChange_StepDef {
     @Then("Verify the password with less than {int} digit strength color")
     public void verify_the_password_with_less_than_digit_strength_color(Integer int1) {
         Assert.assertTrue(US_003.strengthLevel_4.isDisplayed());
-        Driver.getDriver().navigate().refresh();
+        US_008_ChangePassword_Page.currentPassword.clear();
+        US_008_ChangePassword_Page.newPassword.clear();
+        US_008_ChangePassword_Page.confirmPassword.clear();
     }
 
     @Given("Enter old password from tc12")
@@ -310,7 +332,12 @@ public class US_008_PasswordChange_StepDef {
 
     @Then("Verify the confirm message")
     public void verify_the_confirm_message() {
-        Assert.assertEquals("Password changed!", successMessage);
+        String expectedMessage = US_008_ChangePassword_Page.successMessage.getText();
+        System.out.println("expected message: -"+expectedMessage+"-");
+        String actualMessage = "Password changed!";
+        System.out.println("actual message: -"+actualMessage+"-");
+        Assert.assertTrue(expectedMessage.contains(actualMessage));
+
     }
 
 }
