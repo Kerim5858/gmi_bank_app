@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         features ="src/test/resources/features",
         glue ="gmibank_team06/step_definitions",
         tags ="@ChangePassword",
-        dryRun = true
+        dryRun = false
 
 
 

@@ -1,66 +1,79 @@
 package gmibank_team06.step_definitions;
 
+import gmibank_team06.pages.US_004_005_Login_Page;
 import gmibank_team06.pages.US_008_ChangePassword_Page;
+import gmibank_team06.utilities.ConfigurationReader;
+import gmibank_team06.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class US_008_PasswordChange_StepDef {
 
     US_008_ChangePassword_Page US_008_ChangePassword_Page = new US_008_ChangePassword_Page();
+    US_004_005_Login_Page login_page = new US_004_005_Login_Page();
+
 
     @Given("Log in to the account")
     public void log_in_to_the_account() {
-
+        Driver.getDriver().get(ConfigurationReader.getProperty("GMI_Url"));
+        login_page.loginButton.click();
+        login_page.signInButton.click();
+        login_page.username.sendKeys(ConfigurationReader.getProperty("GMI_Costumer_valid_username"));
+        login_page.password.sendKeys(ConfigurationReader.getProperty("GMI_Costumer_valid_password"));
+        login_page.sigIn.click();
     }
 
     @Given("Click to the account name")
     public void click_to_the_account_name() {
-
+        US_008_ChangePassword_Page.account.click();
     }
 
     @Given("Click to Password")
     public void click_to_Password() {
-
+        US_008_ChangePassword_Page.passwordIcon.click();
     }
 
     @Given("Click Current password")
     public void click_Current_password() {
-
+        US_008_ChangePassword_Page.currentPassword.click();
     }
 
     @Given("Enter old password")
     public void enter_old_password() {
-
+        US_008_ChangePassword_Page.currentPassword.sendKeys(ConfigurationReader.getProperty("GMI_Costumer_valid_password"));
     }
 
     @Given("Click New password")
     public void click_New_password() {
-
+        US_008_ChangePassword_Page.newPassword.click();
     }
 
     @Given("Enter new password")
     public void enter_new_password() {
-
+        US_008_ChangePassword_Page.newPassword.sendKeys(ConfigurationReader.getProperty("GMI_Costumer_valid_password"));
     }
 
     @Given("Click New password confirmation")
     public void click_New_password_confirmation() {
-
+     US_008_ChangePassword_Page.confirmPassword.click();
     }
 
     @Given("Re-enter new password")
     public void re_enter_new_password() {
-
+        US_008_ChangePassword_Page.confirmPassword.sendKeys(ConfigurationReader.getProperty("GMI_Costumer_valid_password"));
     }
 
     @Given("Click save")
     public void click_save() {
-
+        US_008_ChangePassword_Page.saveButton.click();
     }
 
     @Then("Verify the message")
     public void verify_the_message() {
-
+        String successMessage = US_008_ChangePassword_Page.successMessage.getText();
+        Assert.assertNotEquals("This is old password", successMessage);
     }
 
     @Given("Enter old password from tc1")

@@ -1,355 +1,1156 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_005_Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_008_ChangePassword.feature");
 formatter.feature({
-  "name": "gmiBank Login",
+  "name": "Password segment on Homepage should be editable",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@gmiLogin_US_005"
+      "name": "@ChangePassword"
     }
   ]
 });
-formatter.background({
-  "name": "TC_005 gmiBank login Test",
-  "description": "",
-  "keyword": "Background"
-});
 formatter.scenario({
-  "name": "Go to login page negativePage",
+  "name": "TC_US8_001\tThe old password should not be used",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@gmiLogin_US_005"
+      "name": "@ChangePassword"
+    },
+    {
+      "name": "@TC1"
     }
   ]
 });
 formatter.step({
-  "name": "user is on the gmiBank page",
+  "name": "Log in to the account",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_is_on_the_gmiBank_page()"
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.log_in_to_the_account()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on the login",
+  "name": "Click to the account name",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_004_Login_SD.click_on_the_login()"
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_to_the_account_name()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on the sign in",
+  "name": "Click to Password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_004_Login_SD.click_on_the_sign_in()"
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_to_Password()"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.background({
-  "name": "TC_005 gmiBank login Test",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.scenario({
-  "name": "Negative  username test",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@gmiLogin_US_005"
-    },
-    {
-      "name": "@gmiBankLoginTC_003"
-    }
-  ]
-});
 formatter.step({
-  "name": "User should be invalid username",
+  "name": "Click Current password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_invalid_username()"
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should be valid password",
+  "name": "Enter old password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_should_be_valid_password()"
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click sing in button",
+  "name": "Click New password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_click_sing_in_button()"
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Then i should see the error message",
+  "name": "Enter new password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password confirmation",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Re-enter new password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click save",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the message",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_005_Login_SD.then_i_should_see_the_error_message()"
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_message()"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.background({
-  "name": "TC_005 gmiBank login Test",
-  "description": "",
-  "keyword": "Background"
-});
 formatter.scenario({
-  "name": "Negative password test",
-  "description": "",
+  "name": "TC_US8_002 There should be at least 1 lowercase char for stronger password and",
+  "description": "  see the level chart change accordingly",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@gmiLogin_US_005"
+      "name": "@ChangePassword"
     },
     {
-      "name": "@gmiBankLoginTC_004"
+      "name": "@TC2"
     }
   ]
 });
 formatter.step({
-  "name": "User should be valid username",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_should_be_valid_username()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should be invalid password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_invalid_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click sing in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_click_sing_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Then I should see the error message1",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_005_Login_SD.then_I_should_see_the_error_message1()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "TC_005 gmiBank login Test",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.scenario({
-  "name": "Negative username and password test",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@gmiLogin_US_005"
-    },
-    {
-      "name": "@gmiBankTC_005"
-    }
-  ]
-});
-formatter.step({
-  "name": "User should be invalid username",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_invalid_username()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should be invalid password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_invalid_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click sing in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_click_sing_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Then I should see the error message2",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_005_Login_SD.then_I_should_see_the_error_message2()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "TC_005 gmiBank login Test",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.scenario({
-  "name": "Forget password test",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@gmiLogin_US_005"
-    },
-    {
-      "name": "@gmiBankTC_006"
-    }
-  ]
-});
-formatter.step({
-  "name": "Click on the Did you forget your password?",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_005_Login_SD.click_on_the_Did_you_forget_your_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "provide email to checkbox",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_005_Login_SD.provide_email_to_checkbox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on the Reset password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_005_Login_SD.click_on_the_Reset_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I should see the message reset your password",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_005_Login_SD.i_should_see_the_message_reset_your_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "TC_005 gmiBank login Test",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.scenario({
-  "name": "New Registration",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@gmiLogin_US_005"
-    },
-    {
-      "name": "@gmiBankLoginTC_007"
-    }
-  ]
-});
-formatter.step({
-  "name": "user is on the gmiBank page",
+  "name": "Click Current password",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_is_on_the_gmiBank_page()"
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on the login",
+  "name": "Enter old password from tc1",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_004_Login_SD.click_on_the_login()"
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_from_tc1()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on the sign in",
+  "name": "Click New password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_004_Login_SD.click_on_the_sign_in()"
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on the You don\u0027t have an account yet? Register a new account",
+  "name": "Enter new password with lowercase",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_005_Login_SD.click_on_the_You_don_t_have_an_account_yet_Register_a_new_account()"
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_with_lowercase()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should be see Registration",
+  "name": "Click New password confirmation",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Re-enter new password with lowercase",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_with_lowercase()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click save",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the password with lowercase strength color",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_see_Registration()"
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_with_lowercase_strength_color()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC_US8_003 Without at least 1 lowercase char see the level chart change accordingly",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@ChangePassword"
+    },
+    {
+      "name": "@TC3"
+    }
+  ]
+});
+formatter.step({
+  "name": "Click Current password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter old password from tc2",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_from_tc2()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter new password without lowercase",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_without_lowercase()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password confirmation",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Re-enter new password without lowercase",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_without_lowercase()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click save",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the password without lowercase strength color",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_without_lowercase_strength_color()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC_US8_004\tThere should be at least 1 Uppercase char and see the level  chart change accordingly",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@ChangePassword"
+    },
+    {
+      "name": "@TC4"
+    }
+  ]
+});
+formatter.step({
+  "name": "Click Current password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter old password from tc3",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_from_tc3()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter new password with uppercase",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_with_uppercase()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password confirmation",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Re-enter new password with uppercase",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_with_uppercase()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click save",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the password with uppercase strength color",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_with_uppercase_strength_color()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC_US8_005 Without at least 1 Uppercase char see the level  chart change accordingly",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@ChangePassword"
+    },
+    {
+      "name": "@TC5"
+    }
+  ]
+});
+formatter.step({
+  "name": "Click Current password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter old password from tc4",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_from_tc4()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter new password without uppercase",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_without_uppercase()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password confirmation",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Re-enter new password without uppercase",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_without_uppercase()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click save",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the password without uppercase strength color",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_without_uppercase_strength_color()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC_US8_006\tThere should be at least 1 digit  and see the level chart change accordingly",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@ChangePassword"
+    },
+    {
+      "name": "@TC6"
+    }
+  ]
+});
+formatter.step({
+  "name": "Click Current password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter old password from tc5",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_from_tc5()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter new password with digit",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_with_digit()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password confirmation",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Re-enter new password with digit",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_with_digit()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click save",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the password with digit strength color",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_with_digit_strength_color()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC_US8_007\tWithout at least 1 digit see the level  chart change accordingly",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@ChangePassword"
+    },
+    {
+      "name": "@TC7"
+    }
+  ]
+});
+formatter.step({
+  "name": "Click Current password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter old password from tc6",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_from_tc6()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter new password without digit",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_without_digit()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password confirmation",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Re-enter new password without digit",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_without_digit()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click save",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the password without digit strength color",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_without_digit_strength_color()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC_US8_008\tThere should be at least 1 special char and see the level bar change accordingly",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@ChangePassword"
+    },
+    {
+      "name": "@TC8"
+    }
+  ]
+});
+formatter.step({
+  "name": "Click Current password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter old password tc7",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_tc7()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter new password with special char",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_with_special_char()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password confirmation",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Re-enter new password with special char",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_with_special_char()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click save",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the password with special char strength color",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_with_special_char_strength_color()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC_US8_009\tWithout at least 1 special char see the level bar change accordingly",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@ChangePassword"
+    },
+    {
+      "name": "@TC9"
+    }
+  ]
+});
+formatter.step({
+  "name": "Click Current password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter old password from tc8",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_from_tc8()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter new password without special char",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_without_special_char()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password confirmation",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Re-enter new password without special char",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_without_special_char()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click save",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the password without special char strength color",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_without_special_char_strength_color()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC_US8_010 There should be at least 7 chars for a stronger password",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@ChangePassword"
+    },
+    {
+      "name": "@TC10"
+    }
+  ]
+});
+formatter.step({
+  "name": "Click Current password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter old password from tc9",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_from_tc9()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter new password at least 7 chars",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_at_least_chars(java.lang.Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password confirmation",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Re-enter new password at least 7 chars",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_at_least_chars(java.lang.Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click save",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the password with at least 7 chars strength color",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_with_at_least_chars_strength_color(java.lang.Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC_US8_011\tLess than 7 chars see the level bar change accordingly",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@ChangePassword"
+    },
+    {
+      "name": "@TC11"
+    }
+  ]
+});
+formatter.step({
+  "name": "Click Current password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter old password from tc10",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_from_tc10()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter new password less than 7 digit",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_less_than_digit(java.lang.Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password confirmation",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Re-enter new password less than 7 digit",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_less_than_digit(java.lang.Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click save",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the password with less than 7 digit strength color",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_password_with_less_than_digit_strength_color(java.lang.Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC_US8_012\tThe new password should be confirmed",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@ChangePassword"
+    },
+    {
+      "name": "@TC12"
+    }
+  ]
+});
+formatter.step({
+  "name": "Click Current password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_Current_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter old password from tc12",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_old_password_from_tc12()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter new password as requested",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.enter_new_password_as_requested()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click New password confirmation",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_New_password_confirmation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Re-enter new password as requested",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.re_enter_new_password_as_requested()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click save",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.click_save()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the confirm message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_008_PasswordChange_StepDef.verify_the_confirm_message()"
 });
 formatter.result({
   "status": "passed"

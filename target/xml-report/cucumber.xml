@@ -1,45 +1,138 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="8.756">
-<testcase classname="gmiBank Login" name="Go to login page negativePage" time="3.707">
-<system-out><![CDATA[Given user is on the gmiBank page...........................................passed
-And Click on the login......................................................passed
-And Click on the sign in....................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="10.896">
+<testcase classname="Password segment on Homepage should be editable" name="TC_US8_001&#9;The old password should not be used" time="6.046">
+<system-out><![CDATA[Given Log in to the account.................................................passed
+And Click to the account name...............................................passed
+And Click to Password.......................................................passed
+And Click Current password..................................................passed
+And Enter old password......................................................passed
+And Click New password......................................................passed
+And Enter new password......................................................passed
+And Click New password confirmation.........................................passed
+And Re-enter new password...................................................passed
+And Click save..............................................................passed
+Then Verify the message.....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="gmiBank Login" name="Negative  username test" time="1.219">
-<system-out><![CDATA[And User should be invalid username.........................................passed
-And User should be valid password...........................................passed
-And User click sing in button...............................................passed
-Then Then i should see the error message....................................passed
+<testcase classname="Password segment on Homepage should be editable" name="TC_US8_002 There should be at least 1 lowercase char for stronger password and" time="0.392">
+<system-out><![CDATA[Given Click Current password................................................passed
+And Enter old password from tc1.............................................passed
+And Click New password......................................................passed
+And Enter new password with lowercase.......................................passed
+And Click New password confirmation.........................................passed
+And Re-enter new password with lowercase....................................passed
+And Click save..............................................................passed
+Then Verify the password with lowercase strength color......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="gmiBank Login" name="Negative password test" time="1.048">
-<system-out><![CDATA[And User should be valid username...........................................passed
-And User should be invalid password.........................................passed
-And User click sing in button...............................................passed
-Then Then I should see the error message1...................................passed
+<testcase classname="Password segment on Homepage should be editable" name="TC_US8_003 Without at least 1 lowercase char see the level chart change accordingly" time="0.561">
+<system-out><![CDATA[Given Click Current password................................................passed
+And Enter old password from tc2.............................................passed
+And Click New password......................................................passed
+And Enter new password without lowercase....................................passed
+And Click New password confirmation.........................................passed
+And Re-enter new password without lowercase.................................passed
+And Click save..............................................................passed
+Then Verify the password without lowercase strength color...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="gmiBank Login" name="Negative username and password test" time="1.023">
-<system-out><![CDATA[And User should be invalid username.........................................passed
-And User should be invalid password.........................................passed
-And User click sing in button...............................................passed
-Then Then I should see the error message2...................................passed
+<testcase classname="Password segment on Homepage should be editable" name="TC_US8_004&#9;There should be at least 1 Uppercase char and see the level  chart change accordingly" time="0.391">
+<system-out><![CDATA[Given Click Current password................................................passed
+And Enter old password from tc3.............................................passed
+And Click New password......................................................passed
+And Enter new password with uppercase.......................................passed
+And Click New password confirmation.........................................passed
+And Re-enter new password with uppercase....................................passed
+And Click save..............................................................passed
+Then Verify the password with uppercase strength color......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="gmiBank Login" name="Forget password test" time="0.333">
-<system-out><![CDATA[And Click on the Did you forget your password?..............................passed
-And provide email to checkbox...............................................passed
-And Click on the Reset password.............................................passed
-Then I should see the message reset your password...........................passed
+<testcase classname="Password segment on Homepage should be editable" name="TC_US8_005 Without at least 1 Uppercase char see the level  chart change accordingly" time="0.409">
+<system-out><![CDATA[Given Click Current password................................................passed
+And Enter old password from tc4.............................................passed
+And Click New password......................................................passed
+And Enter new password without uppercase....................................passed
+And Click New password confirmation.........................................passed
+And Re-enter new password without uppercase.................................passed
+And Click save..............................................................passed
+Then Verify the password without uppercase strength color...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="gmiBank Login" name="New Registration" time="1.15">
-<system-out><![CDATA[Given user is on the gmiBank page...........................................passed
-And Click on the login......................................................passed
-And Click on the sign in....................................................passed
-And Click on the You don't have an account yet? Register a new account......passed
-Then User should be see Registration........................................passed
+<testcase classname="Password segment on Homepage should be editable" name="TC_US8_006&#9;There should be at least 1 digit  and see the level chart change accordingly" time="0.388">
+<system-out><![CDATA[Given Click Current password................................................passed
+And Enter old password from tc5.............................................passed
+And Click New password......................................................passed
+And Enter new password with digit...........................................passed
+And Click New password confirmation.........................................passed
+And Re-enter new password with digit........................................passed
+And Click save..............................................................passed
+Then Verify the password with digit strength color..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Password segment on Homepage should be editable" name="TC_US8_007&#9;Without at least 1 digit see the level  chart change accordingly" time="0.38">
+<system-out><![CDATA[Given Click Current password................................................passed
+And Enter old password from tc6.............................................passed
+And Click New password......................................................passed
+And Enter new password without digit........................................passed
+And Click New password confirmation.........................................passed
+And Re-enter new password without digit.....................................passed
+And Click save..............................................................passed
+Then Verify the password without digit strength color.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Password segment on Homepage should be editable" name="TC_US8_008&#9;There should be at least 1 special char and see the level bar change accordingly" time="0.393">
+<system-out><![CDATA[Given Click Current password................................................passed
+And Enter old password tc7..................................................passed
+And Click New password......................................................passed
+And Enter new password with special char....................................passed
+And Click New password confirmation.........................................passed
+And Re-enter new password with special char.................................passed
+And Click save..............................................................passed
+Then Verify the password with special char strength color...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Password segment on Homepage should be editable" name="TC_US8_009&#9;Without at least 1 special char see the level bar change accordingly" time="0.386">
+<system-out><![CDATA[Given Click Current password................................................passed
+And Enter old password from tc8.............................................passed
+And Click New password......................................................passed
+And Enter new password without special char.................................passed
+And Click New password confirmation.........................................passed
+And Re-enter new password without special char..............................passed
+And Click save..............................................................passed
+Then Verify the password without special char strength color................passed
+]]></system-out>
+</testcase>
+<testcase classname="Password segment on Homepage should be editable" name="TC_US8_010 There should be at least 7 chars for a stronger password" time="0.386">
+<system-out><![CDATA[Given Click Current password................................................passed
+And Enter old password from tc9.............................................passed
+And Click New password......................................................passed
+And Enter new password at least 7 chars.....................................passed
+And Click New password confirmation.........................................passed
+And Re-enter new password at least 7 chars..................................passed
+And Click save..............................................................passed
+Then Verify the password with at least 7 chars strength color...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Password segment on Homepage should be editable" name="TC_US8_011&#9;Less than 7 chars see the level bar change accordingly" time="0.381">
+<system-out><![CDATA[Given Click Current password................................................passed
+And Enter old password from tc10............................................passed
+And Click New password......................................................passed
+And Enter new password less than 7 digit....................................passed
+And Click New password confirmation.........................................passed
+And Re-enter new password less than 7 digit.................................passed
+And Click save..............................................................passed
+Then Verify the password with less than 7 digit strength color..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Password segment on Homepage should be editable" name="TC_US8_012&#9;The new password should be confirmed" time="0.377">
+<system-out><![CDATA[Given Click Current password................................................passed
+And Enter old password from tc12............................................passed
+And Click New password......................................................passed
+And Enter new password as requested.........................................passed
+And Click New password confirmation.........................................passed
+And Re-enter new password as requested......................................passed
+And Click save..............................................................passed
+Then Verify the confirm message.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
