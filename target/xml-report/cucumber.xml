@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="10.103">
 <testcase classname="An Employee can manage Customer" name="The Edit portal can allow user to update First Name" time="9.757">
 <skipped><![CDATA[Given user go to GMI home page..............................................passed
@@ -13,5 +14,43 @@ And user updates first name as "Tom"........................................unde
 And user clicks Edit button.................................................skipped
 Then verify first name is "Tom".............................................undefined
 ]]></skipped>
+
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="12.693">
+<testcase classname="Usersettings" name="User settings should be aditable on homepage" time="8.461">
+<system-out><![CDATA[Given user go to GMI userSettings page......................................passed
+And user enters a valid UspUsername.........................................passed
+And user enters a valid UspPassword.........................................passed
+And user clicks on  Sign in button..........................................passed
+And user clicks on username.................................................passed
+Then clicks on userinfo.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Usersettings" name="positive1" time="2.715">
+<system-out><![CDATA[Given user clicks on First Name Box.........................................passed
+And user enters valid Name..................................................passed
+And user click save button1.................................................passed
+Then should see Setting saved! message1.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Usersettings" name="positive2" time="0.371">
+<system-out><![CDATA[Given user clicks on Last Name Box..........................................passed
+And user enters valid Last Name.............................................passed
+And user click save button2.................................................passed
+Then should see pop up Settings Saved text2.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Usersettings" name="positive3" time="0.429">
+<system-out><![CDATA[Given user clicks on Email Box..............................................passed
+And user enters valid Email.................................................passed
+And user clicks save button3................................................passed
+Then should see pop up Settings Saved text3.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Usersettings" name="positive4" time="0.272">
+<system-out><![CDATA[Given user clicks on Dropdown...............................................passed
+And user sees two options available and select one..........................passed
+Then user clicks on save button4 and sees pop up text4......................passed
+]]></system-out>
+
 </testcase>
 </testsuite>

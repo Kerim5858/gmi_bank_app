@@ -1,4 +1,5 @@
 package gmibank_team06.runners;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -13,16 +14,10 @@ import org.junit.runner.RunWith;
                 },
         features ="src/test/resources/features",
         glue ="gmibank_team06/step_definitions",
-        tags ="@User_story_002",
+        tags ="@User_story_006",
         dryRun = false
 
-
-
-
-
 )
-public class US_001_Registration_Runner{
+public class UserSettingsRunner {
 
 }
-
-

@@ -23,7 +23,6 @@ public class US_001_Registration_StepDef {
     public void user_click_register()  {
         us_001_registrationPage.registerSelect.click();
 
-
     }
 
     @Given("user click ssn textbox  and enter ssn {string}")
