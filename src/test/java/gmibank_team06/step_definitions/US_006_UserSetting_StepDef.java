@@ -97,7 +97,7 @@ public class US_006_UserSetting_StepDef {
 
     @Given("user enters valid Email")
     public void user_enters_valid_Email() {
-        us_006_userSettingsPage.email.sendKeys(ConfigurationReader.getProperty("email"));
+        us_006_userSettingsPage.email.sendKeys(ConfigurationReader.getProperty("emailay"));
     }
 
     @Given("user clicks save button3")
