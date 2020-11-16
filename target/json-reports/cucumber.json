@@ -3,151 +3,1427 @@
     "line": 2,
     "elements": [
       {
-        "line": 5,
-        "name": "Creation page",
+        "line": 4,
+        "name": "Homepage",
         "description": "",
         "type": "background",
         "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-15T18:58:44.809Z",
-        "line": 6,
-        "name": "go to Create or edit a Customer",
-        "description": "",
-        "id": "date;go-to-create-or-edit-a-customer",
-        "type": "scenario",
-        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8714000000,
+              "duration": 14493000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user go to GMI home page",
+            "line": 5,
+            "name": "user is in the Gmibank Page",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_go_to_GMI_home_page()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 283000000,
+              "duration": 444000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user click sig in button",
+            "line": 6,
+            "name": "user click User icon",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_sig_in_button()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 189000000,
+              "duration": 141000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user enter valid username",
+            "line": 7,
+            "name": "user click User register",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_enter_valid_username()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
             },
             "keyword": "And "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:01:45.826Z",
+        "line": 10,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 180000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user enter valid password",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_enter_valid_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 144000000,
+              "duration": 1297000000,
               "status": "passed"
             },
             "line": 11,
-            "name": "user click sign in button",
+            "name": "user fill all the fields except SSN textbox",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_sign_in_button()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_SSN_textbox()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 389000000,
+              "duration": 207000000,
               "status": "passed"
             },
             "line": 12,
-            "name": "user click my operation",
+            "name": "verify get error message1\"translation-not-found[Your SSN is required]\"",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_my_operation()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 133000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user click manage Customer",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_manage_Customer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 390000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user click Create a new Customer button",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_Create_a_new_Customer_button()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message1_translation_not_found_Your_SSN_is_required()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@User_story_014"
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_ssn"
           }
         ]
       },
       {
-        "line": 5,
-        "name": "Creation page",
+        "line": 4,
+        "name": "Homepage",
         "description": "",
         "type": "background",
         "keyword": "Background",
-        "steps": []
+        "steps": [
+          {
+            "result": {
+              "duration": 446000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
       },
       {
-        "start_timestamp": "2020-11-15T18:58:55.419Z",
-        "line": 17,
-        "name": "negative",
+        "start_timestamp": "2020-11-16T05:02:02.826Z",
+        "line": 15,
+        "name": "User doesn\u0027t register with invalid credentials",
         "description": "",
-        "id": "date;negative",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 721000000,
+              "duration": 962000000,
               "status": "passed"
             },
-            "line": 18,
-            "name": "user Select previous day",
+            "line": 16,
+            "name": "user fill all the fields except name textbox",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_Select_previous_day()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_name_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify get error message2 \"Your First Name is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your First Name is required.\"",
+                  "offset": 26
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message2(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_firstname"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 465000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 98000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:04.536Z",
+        "line": 20,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1042000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user fill all the fields except lastname textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_lastname_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 61000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "verify get error message3 \"Your Last Name is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your Last Name is required.\"",
+                  "offset": 26
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message3(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_lastname"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 301000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:06.330Z",
+        "line": 25,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 899000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user fill all the fields except address textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_address_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027invalid-feedback\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.193)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-6F4KRPQA\u0027, ip: \u0027192.168.1.252\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\ekrem\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: d152b7f574770afc51c537c828402136\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027invalid-feedback\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.getText(Unknown Source)\r\n\tat gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message4(US_002_Invalid_Registration.java:110)\r\n\tat ✽.verify get error message4 \"Your address is required.\"(file:///C:/Users/ekrem/IdeaProjects/gmi_bank_app1/src/test/resources/features/US_002_Invalid_Registration.feature:27)\r\n",
+              "duration": 10081000000,
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "verify get error message4 \"Your address is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your address is required.\"",
+                  "offset": 26
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message4(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_address"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 331000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 111000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 122000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:17.867Z",
+        "line": 30,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 940000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user fill all the fields except phone textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_phone_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027invalid-feedback\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.193)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-6F4KRPQA\u0027, ip: \u0027192.168.1.252\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\ekrem\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: d152b7f574770afc51c537c828402136\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027invalid-feedback\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.getText(Unknown Source)\r\n\tat gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message5(US_002_Invalid_Registration.java:131)\r\n\tat ✽.verify get error message5 \"Your phone is required.\"(file:///C:/Users/ekrem/IdeaProjects/gmi_bank_app1/src/test/resources/features/US_002_Invalid_Registration.feature:32)\r\n",
+              "duration": 10033000000,
+              "status": "failed"
+            },
+            "line": 32,
+            "name": "verify get error message5 \"Your phone is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your phone is required.\"",
+                  "offset": 26
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message5(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_phone"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 346000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 120000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:29.419Z",
+        "line": 35,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 922000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user fill all the fields except username textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_username_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 40000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "verify get error message6 \"Your username is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your username is required.\"",
+                  "offset": 26
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message6(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_username"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 319000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:30.967Z",
+        "line": 40,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 917000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user fill all the fields except email textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_email_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "verify get error message7 \"Your email is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your email is required.\"",
+                  "offset": 26
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message7(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_email"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 284000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 84000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:32.462Z",
+        "line": 45,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 912000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user fill all the fields except password textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_password_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 41000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "verify get error message8 \"The password and its confirmation do not match!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The password and its confirmation do not match!\"",
+                  "offset": 26
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message8(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_password"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 299000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 102000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:33.909Z",
+        "line": 50,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1085000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user fill all the fields except confirmation password textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_confirmation_password_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 43000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "verify get error message9 \"Your confirmation password is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your confirmation password is required.\"",
+                  "offset": 26
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message9(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_confirmation_password"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 344000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 108000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:35.561Z",
+        "line": 55,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1203000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user fill all the fields except SSN number2 textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_SSN_number2_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "verify get error message10 \"translation-not-found[Your SSN is required]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"translation-not-found[Your SSN is required]\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message10(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_SSN_number2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 335000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 115000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:37.412Z",
+        "line": 60,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1180000000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "user fill all the fields except SSN number3 textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_SSN_number3_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "verify get error message11 \"translation-not-found[Your SSN is required]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"translation-not-found[Your SSN is required]\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message11(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_SSN_number3"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 368000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 101000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 126000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:39.220Z",
+        "line": 65,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1216000000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "user fill all the fields except SSN number4 textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_SSN_number4_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35000000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "verify get error message12 \"translation-not-found[Your SSN is required]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"translation-not-found[Your SSN is required]\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message12(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_SSN_number4"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 398000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 107000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:41.076Z",
+        "line": 70,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1150000000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "user fill all the fields except phone2 textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_phone2_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "verify get error message13 \"Your mobile phone number is invalid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your mobile phone number is invalid\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message13(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_phone2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 346000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 107000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:42.912Z",
+        "line": 75,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1140000000,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "user fill all the fields except phone3 textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_phone3_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "verify get error message14 \"Your phone is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your phone is required\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message14(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_phone3"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 369000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:44.672Z",
+        "line": 80,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1250000000,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "user fill all the fields except phone4 textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_phone4_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "verify get error message15 \"Your email is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your email is required\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message15(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_phone4"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 372000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
             },
             "keyword": "Given "
           },
@@ -156,461 +1432,367 @@
               "duration": 104000000,
               "status": "passed"
             },
-            "line": 19,
-            "name": "Click Save",
+            "line": 6,
+            "name": "user click User icon",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.click_Save()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 46000000,
+              "duration": 131000000,
               "status": "passed"
             },
-            "line": 20,
-            "name": "system should give error message",
+            "line": 7,
+            "name": "user click User register",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.system_should_give_error_message()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
             },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@User_story_014"
-          },
-          {
-            "name": "@TC_014_Date1"
+            "keyword": "And "
           }
         ]
       },
       {
-        "line": 5,
-        "name": "Creation page",
+        "start_timestamp": "2020-11-16T05:02:46.570Z",
+        "line": 85,
+        "name": "User doesn\u0027t register with invalid credentials",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-15T18:58:56.309Z",
-        "line": 23,
-        "name": "positive",
-        "description": "",
-        "id": "date;positive",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 240000000,
+              "duration": 1394000000,
               "status": "passed"
             },
-            "line": 24,
-            "name": "system should give Selected current date",
+            "line": 86,
+            "name": "user fill all the fields except email2 textbox",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.system_should_give_Selected_current_date()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_email2_textbox()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 70000000,
+              "duration": 33000000,
               "status": "passed"
             },
-            "line": 25,
-            "name": "Click Save",
+            "line": 87,
+            "name": "verify get error message16 \"This field is invalid\"",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.click_Save()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 24000000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "verify current date and system date",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.verify_current_date_and_system_date()"
+              "arguments": [
+                {
+                  "val": "\"This field is invalid\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message16(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@User_story_014"
+            "name": "@gmibank_invalid_credentials"
           },
           {
-            "name": "@TC_014_Date"
+            "name": "@gmibank_invalid_email2"
           }
         ]
       },
       {
-        "line": 5,
-        "name": "Creation page",
+        "line": 4,
+        "name": "Homepage",
         "description": "",
         "type": "background",
         "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-15T18:58:56.652Z",
-        "line": 29,
-        "name": "User",
-        "description": "",
-        "id": "date;user",
-        "type": "scenario",
-        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 657000000,
+              "duration": 360000000,
               "status": "passed"
             },
-            "line": 30,
-            "name": "user leave userTextBox blank",
+            "line": 5,
+            "name": "user is in the Gmibank Page",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_leave_userTextBox_blank()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 415000000,
+              "duration": 103000000,
               "status": "passed"
             },
-            "line": 31,
-            "name": "User gets error message",
+            "line": 6,
+            "name": "user click User icon",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_gets_error_message()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 166000000,
+              "duration": 147000000,
               "status": "passed"
             },
-            "line": 32,
-            "name": "user click save button",
+            "line": 7,
+            "name": "user click User register",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
             },
             "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@User_story_014"
-          },
-          {
-            "name": "@TC_014_User"
           }
         ]
       },
       {
-        "line": 5,
-        "name": "Creation page",
+        "start_timestamp": "2020-11-16T05:02:48.614Z",
+        "line": 90,
+        "name": "User doesn\u0027t register with invalid credentials",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-15T18:58:57.905Z",
-        "line": 35,
-        "name": "User_positive",
-        "description": "",
-        "id": "date;user-positive",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 367000000,
+              "duration": 1197000000,
               "status": "passed"
             },
-            "line": 36,
-            "name": "user select valid date",
+            "line": 91,
+            "name": "user fill all the fields except email3 textbox",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_select_valid_date()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 184000000,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "user click save button",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 69000000,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "verify valid data",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.verify_valid_data()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@User_story_014"
-          },
-          {
-            "name": "@TC_014_User"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "Creation page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-15T18:58:58.538Z",
-        "line": 41,
-        "name": "Account_negative",
-        "description": "",
-        "id": "date;account-negative",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 431000000,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "user leave accountTextBox blank",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_leave_accountTextBox_blank()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_email3_textbox()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 164000000,
+              "duration": 50000000,
               "status": "passed"
             },
-            "line": 43,
-            "name": "user click save button",
+            "line": 92,
+            "name": "verify get error message17 \"Your email is required\"",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 387000000,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "User gets error message",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_gets_error_message()"
+              "arguments": [
+                {
+                  "val": "\"Your email is required\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message17(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@User_story_014"
+            "name": "@gmibank_invalid_credentials"
           },
           {
-            "name": "@TC_014_Account"
+            "name": "@gmibank_invalid_email3"
           }
         ]
       },
       {
-        "line": 5,
-        "name": "Creation page",
+        "line": 4,
+        "name": "Homepage",
         "description": "",
         "type": "background",
         "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-15T18:58:59.532Z",
-        "line": 48,
-        "name": "User_positive",
-        "description": "",
-        "id": "date;user-positive",
-        "type": "scenario",
-        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 316000000,
+              "duration": 343000000,
               "status": "passed"
             },
-            "line": 49,
-            "name": "user select valid date",
+            "line": 5,
+            "name": "user is in the Gmibank Page",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_select_valid_date()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 162000000,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "user click save button",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 39000000,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "verify valid data",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.verify_valid_data()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@User_story_014"
-          },
-          {
-            "name": "@TC_014_Account"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "Creation page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-15T18:59:00.061Z",
-        "line": 54,
-        "name": "Zelle_no_click",
-        "description": "",
-        "id": "date;zelle-no-click",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 357000000,
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "user doesn\u0027t click",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_do_not_click()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 25000000,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "user verify radio button",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_verify_radio_button()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@User_story_014"
-          },
-          {
-            "name": "@TC_014_Zelle"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "Creation page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-15T18:59:00.453Z",
-        "line": 59,
-        "name": "Zelle_click",
-        "description": "",
-        "id": "date;zelle-click",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 274000000,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "user click Zelle button",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_click_Zelle_button()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 22000000,
+              "duration": 106000000,
               "status": "passed"
             },
-            "line": 61,
-            "name": "User verify radio button",
+            "line": 6,
+            "name": "user click User icon",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_011_Date_StepDef.user_verify_radio_button1()"
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 126000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:50.480Z",
+        "line": 95,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1144000000,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "user fill all the fields except email4 textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_email4_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 41000000,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "verify get error message18 \"Your email is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your email is required\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message18(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@User_story_014"
+            "name": "@gmibank_invalid_credentials"
           },
           {
-            "name": "@TC_014_Account"
+            "name": "@gmibank_invalid_email4"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 334000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in the Gmibank Page",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_is_in_the_Gmibank_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 106000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click User icon",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 136000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click User register",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_click_User_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T05:02:52.248Z",
+        "line": 100,
+        "name": "User doesn\u0027t register with invalid credentials",
+        "description": "",
+        "id": "invalid-register;user-doesn-t-register-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1117000000,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "user fill all the fields except email5 textbox",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.user_fill_all_the_fields_except_email5_textbox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35000000,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "verify get error message19 \"Your email is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your email is required\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank_team06.step_definitions.US_002_Invalid_Registration.verify_get_error_message19(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@gmibank_invalid_credentials"
+          },
+          {
+            "name": "@gmibank_invalid_email5"
           }
         ]
       }
     ],
-    "name": "Date",
+    "name": "Invalid Register",
     "description": "",
-    "id": "date",
+    "id": "invalid-register",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_014_New_Date.feature",
+    "uri": "file:src/test/resources/features/US_002_Invalid_Registration.feature",
     "tags": [
       {
-        "name": "@User_story_014",
+        "name": "@gmibank_invalid_credentials",
         "type": "Tag",
         "location": {
           "line": 1,
