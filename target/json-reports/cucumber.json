@@ -4,6 +4,20 @@
     "elements": [
       {
         "line": 3,
+
+        "name": "navigate to manage customers",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8484000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user go to GMI home page",
+
         "name": "user go to usersettings",
         "description": "",
         "type": "background",
@@ -26,6 +40,7 @@
             },
             "line": 6,
             "name": "user go to GMI userSettings page",
+
             "match": {
               "location": "gmibank_team06.step_definitions.US_006_UserSetting_StepDef.user_go_to_GMI_userSettings_page()"
             },
@@ -33,11 +48,43 @@
           },
           {
             "result": {
+
+              "duration": 238000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user click sig in button",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_sig_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter valid username",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_enter_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 141000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter valid password",
+
               "duration": 134000000,
               "status": "passed"
             },
             "line": 7,
             "name": "user enters a valid UspUsername",
+
             "match": {
               "location": "gmibank_team06.step_definitions.US_006_UserSetting_StepDef.user_enters_a_valid_UspUsername()"
             },
@@ -45,11 +92,19 @@
           },
           {
             "result": {
+
+              "duration": 95000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click sign in button",
+
               "duration": 121000000,
               "status": "passed"
             },
             "line": 8,
             "name": "user enters a valid UspPassword",
+
             "match": {
               "location": "gmibank_team06.step_definitions.US_006_UserSetting_StepDef.user_enters_a_valid_UspPassword()"
             },
@@ -57,11 +112,19 @@
           },
           {
             "result": {
+
+              "duration": 498000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click my operation",
+
               "duration": 103000000,
               "status": "passed"
             },
             "line": 9,
             "name": "user clicks on  Sign in button",
+
             "match": {
               "location": "gmibank_team06.step_definitions.US_006_UserSetting_StepDef.user_clicks_on_Sign_in_button()"
             },
@@ -69,14 +132,34 @@
           },
           {
             "result": {
+
+              "duration": 120000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click manage Customer",
+
               "duration": 398000000,
               "status": "passed"
             },
             "line": 10,
             "name": "user clicks on username",
+
             "match": {
               "location": "gmibank_team06.step_definitions.US_006_UserSetting_StepDef.user_clicks_on_username()"
             },
+
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T19:15:31.300Z",
+        "line": 37,
+        "name": "The Edit portal can allow user to update First Name",
+        "description": "",
+        "id": "an-employee-can-manage-customer;the-edit-portal-can-allow-user-to-update-first-name",
+
             "keyword": "And "
           },
           {
@@ -190,11 +273,19 @@
         "name": "positive2",
         "description": "",
         "id": "usersettings;positive2",
+
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+
+              "status": "undefined"
+            },
+            "line": 38,
+            "name": "user is on Create or edit a Customer page",
+            "match": {},
+
               "duration": 147000000,
               "status": "passed"
             },
@@ -278,10 +369,13 @@
             "match": {
               "location": "gmibank_team06.step_definitions.US_006_UserSetting_StepDef.user_clicks_on_Email_Box()"
             },
+
             "keyword": "Given "
           },
           {
             "result": {
+
+              "status": "undefined"
               "duration": 135000000,
               "status": "passed"
             },
@@ -302,10 +396,41 @@
             "match": {
               "location": "gmibank_team06.step_definitions.US_006_UserSetting_StepDef.user_clicks_save_button3()"
             },
+            "line": 39,
+            "name": "user updates first name as \"Tom\"",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "user clicks Edit button",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_012_ManageCustomers_StepDefiniton.user_clicks_Edit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 41,
+            "name": "verify first name is \"Tom\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@manage_customers"
+          },
+          {
+            "name": "@a"
+          },
+          {
+            "name": "@TC_US12_013"
               "duration": 54000000,
               "status": "passed"
             },
@@ -389,6 +514,14 @@
         ]
       }
     ],
+    "name": "An Employee can manage Customer",
+    "description": "",
+    "id": "an-employee-can-manage-customer",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US_012_ManageCustomers.feature",
+    "tags": [
+      {
+        "name": "@manage_customers",
     "name": "Usersettings",
     "description": "",
     "id": "usersettings",

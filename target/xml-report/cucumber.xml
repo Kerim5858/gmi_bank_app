@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="10.103">
+<testcase classname="An Employee can manage Customer" name="The Edit portal can allow user to update First Name" time="9.757">
+<skipped><![CDATA[Given user go to GMI home page..............................................passed
+And user click sig in button................................................passed
+And user enter valid username...............................................passed
+And user enter valid password...............................................passed
+And user click sign in button...............................................passed
+And user click my operation.................................................passed
+Then user click manage Customer.............................................passed
+Given user is on Create or edit a Customer page.............................undefined
+And user updates first name as "Tom"........................................undefined
+And user clicks Edit button.................................................skipped
+Then verify first name is "Tom".............................................undefined
+]]></skipped>
+
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="12.693">
 <testcase classname="Usersettings" name="User settings should be aditable on homepage" time="8.461">
 <system-out><![CDATA[Given user go to GMI userSettings page......................................passed
@@ -35,5 +51,6 @@ Then should see pop up Settings Saved text3.................................pass
 And user sees two options available and select one..........................passed
 Then user clicks on save button4 and sees pop up text4......................passed
 ]]></system-out>
+
 </testcase>
 </testsuite>
