@@ -3,6 +3,8 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="ALL" />
   </component>
+<<<<<<< HEAD
+=======
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -21,6 +23,7 @@
     </expand>
     <select />
   </component>
+>>>>>>> refs/remotes/origin/master
   <component name="ChangeListManager">
 
 
@@ -29,11 +32,27 @@
 
 
     <list default="true" id="de31f2f8-e83f-4a6a-b3c4-a058e284adaf" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/pages/US_006_UserSettingsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/pages/US_007_UserSettingsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/runners/UserSettingsRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/step_definitions/US_006_UserSetting_StepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/step_definitions/US_007_UserSetting_StepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US_006_UserSettings.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US_007_UserSettings.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+=======
       <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/pages/US_002_Invalid_Register.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/runners/US_002_Invalid_Register_Runner.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/step_definitions/US_002_Invalid_Registration.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/resources/features/US_002_Invalid_Registration.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+>>>>>>> refs/remotes/origin/master
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/gmibank_team06/runners/US_001_Registration_Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/runners/US_001_Registration_Runner.java" afterDir="false" />
@@ -92,6 +111,69 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Console" />
+  </component>
+  <component name="RunManager" selected="JUnit.UserSettingsRunner">
+    <configuration name="Scenario: User settings should be aditable on homepage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US_007_UserSettings.feature" />
+      <option name="GLUE" value="gmibank_team06.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="gmibank" />
+      <option name="NAME_FILTER" value="^User settings should be aditable on homepage$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User settings should be aditable on homepage$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User settings should be aditable on homepage" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gmibank" />
+      <option name="PACKAGE_NAME" value="gmibank_team06.runners" />
+      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserSettingPageRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gmibank" />
+      <option name="PACKAGE_NAME" value="gmibank_team06.runners" />
+      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.UserSettingPageRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserSettingsRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gmibank" />
+      <option name="PACKAGE_NAME" value="gmibank_team06.runners" />
+      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.UserSettingsRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserSettingsRunner" />
+        <item itemvalue="Cucumber Java.Scenario: User settings should be aditable on homepage" />
+        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="JUnit.UserSettingPageRunner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+=======
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -271,6 +353,7 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+>>>>>>> refs/remotes/origin/master
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -284,6 +367,79 @@
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
+  <component name="WindowStateProjectService">
+    <state x="466" y="258" width="459" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605514486362">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="258" width="459" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1605514486362" />
+    <state x="236" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605249690808">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="236" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1605249690808" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605381495693">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1605381495693" />
+    <state width="1323" height="49" key="GridCell.Tab.0.bottom" timestamp="1605545849597">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="49" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605545849597" />
+    <state width="1323" height="49" key="GridCell.Tab.0.center" timestamp="1605545849597">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="49" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605545849597" />
+    <state width="1323" height="49" key="GridCell.Tab.0.left" timestamp="1605545849597">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="49" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605545849597" />
+    <state width="1323" height="49" key="GridCell.Tab.0.right" timestamp="1605545849597">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="49" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605545849597" />
+    <state x="213" y="18" key="Maven.ArtifactSearchDialog" timestamp="1605509927704">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="18" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1605509927704" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1605542189786">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1605542189786" />
+    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605511865045">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1605511865045" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1605508235513">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1605508235513" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605542179638">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605542179638" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/test/java/gmibank_team06/pages/US_010_Address_Page.java</url>
+          <line>27</line>
+          <properties field="create_new_customer" class="gmibank_team06.pages.US_010_Address_Page" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gmibank_team06/step_definitions/US_010_Address_StepDef.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gmibank_team06/runners/UserSettingsRunner.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+=======
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -381,5 +537,6 @@
     </state>
     <state x="287" y="3" key="SettingsEditor/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230433884" />
     <state x="344" y="27" key="SettingsEditor/0.23.1920.1131@0.23.1920.1131" timestamp="1605397833672" />
+>>>>>>> refs/remotes/origin/master
   </component>
 </project>
