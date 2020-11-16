@@ -3,699 +3,422 @@
     "line": 2,
     "elements": [
       {
-<<<<<<< HEAD
         "line": 5,
-        "name": "Homepage",
+        "name": "Creation page",
         "description": "",
         "type": "background",
         "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-16T06:32:31.766Z",
+        "line": 6,
+        "name": "go to Create or edit a Customer",
+        "description": "",
+        "id": "ssn-check;go-to-create-or-edit-a-customer",
+        "type": "scenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6634000000,
+              "duration": 10198000000,
               "status": "passed"
             },
             "line": 7,
             "name": "user go to GMI home page",
             "match": {
               "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_go_to_GMI_home_page()"
-=======
-        "line": 3,
-        "name": "TC_005 gmiBank login Test",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-14T15:55:45.352Z",
-        "line": 4,
-        "name": "Go to login page negativePage",
-        "description": "",
-        "id": "gmibank-login;go-to-login-page-negativepage",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 10523000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is on the gmiBank page",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_is_on_the_gmiBank_page()"
->>>>>>> master
             },
             "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 66000000,
+              "duration": 301000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "user click usericon",
+            "name": "user click sig in button",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_usericon()"
-=======
-              "duration": 60000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Click on the login",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_004_Login_SD.click_on_the_login()"
->>>>>>> master
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_sig_in_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 100000000,
+              "duration": 121000000,
               "status": "passed"
             },
-<<<<<<< HEAD
             "line": 9,
-            "name": "user click register",
+            "name": "user enter valid username",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_register()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-14T00:09:52.191Z",
-        "line": 28,
-        "name": "valid ssn",
-        "description": "",
-        "id": "registration;valid-ssn;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 171000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user click ssn textbox  and enter ssn \"873-12-6534\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"873-12-6534\"",
-                  "offset": 38
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_ssn_textbox_and_enter_ssn(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 147000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click name textbox and enter name \"Ayse\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ayse\"",
-                  "offset": 39
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_name_textbox_and_enter_name(java.lang.String)"
-=======
-            "line": 7,
-            "name": "Click on the sign in",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_004_Login_SD.click_on_the_sign_in()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@gmiLogin_US_005"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "TC_005 gmiBank login Test",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-14T15:55:56.129Z",
-        "line": 11,
-        "name": "Negative  username test",
-        "description": "",
-        "id": "gmibank-login;negative--username-test",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 76000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User should be invalid username",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_invalid_username()"
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_enter_valid_username()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 115000000,
+              "duration": 180000000,
               "status": "passed"
             },
-            "line": 13,
-            "name": "User should be valid password",
+            "line": 10,
+            "name": "user enter valid password",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_should_be_valid_password()"
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_enter_valid_password()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 52000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User click sing in button",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_click_sing_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3360000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Then i should see the error message",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_005_Login_SD.then_i_should_see_the_error_message()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@gmiLogin_US_005"
-          },
-          {
-            "name": "@gmiBankLoginTC_003"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "TC_005 gmiBank login Test",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-14T15:55:59.742Z",
-        "line": 19,
-        "name": "Negative password test",
-        "description": "",
-        "id": "gmibank-login;negative-password-test",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 64000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User should be valid username",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_should_be_valid_username()"
->>>>>>> master
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 113000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user click lastname textbox and enter lastname \"Demir\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Demir\"",
-                  "offset": 47
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_lastname_textbox_and_enter_lastname(java.lang.String)"
-=======
-              "duration": 67000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User should be invalid password",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_invalid_password()"
->>>>>>> master
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 131000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user click address textbox and enter address \"12 column way\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"12 column way\"",
-                  "offset": 45
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_address_textbox_and_enter_address(java.lang.String)"
-=======
-              "duration": 54000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User click sing in button",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_click_sing_in_button()"
->>>>>>> master
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 122000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user click mobile phone textbox and enter mobile phone number \"197-912-1982\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"197-912-1982\"",
-                  "offset": 62
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_mobile_phone_textbox_and_enter_mobile_phone_number(java.lang.String)"
-=======
-              "duration": 30000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Then I should see the error message1",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_005_Login_SD.then_I_should_see_the_error_message1()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@gmiLogin_US_005"
-          },
-          {
-            "name": "@gmiBankLoginTC_004"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "TC_005 gmiBank login Test",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-14T15:55:59.961Z",
-        "line": 28,
-        "name": "Negative username and password test",
-        "description": "",
-        "id": "gmibank-login;negative-username-and-password-test",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 55000000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "User should be invalid username",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_invalid_username()"
->>>>>>> master
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
               "duration": 149000000,
               "status": "passed"
             },
-            "line": 19,
-            "name": "user click username textbox and enter username \"AyseD\"",
+            "line": 11,
+            "name": "user click sign in button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"AyseD\"",
-                  "offset": 47
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_username_textbox_and_enter_username(java.lang.String)"
-=======
-              "duration": 51000000,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "User should be invalid password",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_invalid_password()"
->>>>>>> master
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_sign_in_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 194000000,
+              "duration": 405000000,
               "status": "passed"
             },
-            "line": 20,
-            "name": "user click email textbox and enter email \"ayse@gmail.com\"",
+            "line": 12,
+            "name": "user click my operation",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"ayse@gmail.com\"",
-                  "offset": 41
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_email_textbox_and_enter_email(java.lang.String)"
-=======
-              "duration": 69000000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "User click sing in button",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_click_sing_in_button()"
->>>>>>> master
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_my_operation()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 124000000,
+              "duration": 148000000,
               "status": "passed"
             },
-            "line": 21,
-            "name": "user click new password textbox and enter password \"Ad192837?\"",
+            "line": 13,
+            "name": "user click manage Customer",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Ad192837?\"",
-                  "offset": 51
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_new_password_textbox_and_enter_password(java.lang.String)"
-=======
-              "duration": 1079000000,
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_manage_Customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 553000000,
               "status": "passed"
             },
-            "line": 32,
-            "name": "Then I should see the error message2",
+            "line": 14,
+            "name": "user click Create a new Customer button",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_005_Login_SD.then_I_should_see_the_error_message2()"
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_Create_a_new_Customer_button()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@gmiLogin_US_005"
-          },
-          {
-            "name": "@gmiBankTC_005"
+            "name": "@User_story_009"
           }
         ]
       },
       {
-        "line": 3,
-        "name": "TC_005 gmiBank login Test",
+        "line": 5,
+        "name": "Creation page",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": []
       },
       {
-        "start_timestamp": "2020-11-14T15:56:01.223Z",
-        "line": 36,
-        "name": "Forget password test",
+        "start_timestamp": "2020-11-16T06:32:43.993Z",
+        "line": 17,
+        "name": "SSN_valid",
         "description": "",
-        "id": "gmibank-login;forget-password-test",
+        "id": "ssn-check;ssn-valid",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 90000000,
+              "duration": 324000000,
               "status": "passed"
             },
-            "line": 37,
-            "name": "Click on the Did you forget your password?",
+            "line": 18,
+            "name": "user enter invalid SNN",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_005_Login_SD.click_on_the_Did_you_forget_your_password()"
->>>>>>> master
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 106000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "user click conf textbox and enter conf password \"Ad192837?\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ad192837?\"",
-                  "offset": 48
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_conf_textbox_and_enter_conf_password(java.lang.String)"
-=======
-              "duration": 115000000,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "provide email to checkbox",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_005_Login_SD.provide_email_to_checkbox()"
->>>>>>> master
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 93000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user click register button",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_click_register_button()"
-=======
-              "duration": 64000000,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "Click on the Reset password",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_005_Login_SD.click_on_the_Reset_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 37000000,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "I should see the message reset your password",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_005_Login_SD.i_should_see_the_message_reset_your_password()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@gmiLogin_US_005"
-          },
-          {
-            "name": "@gmiBankTC_006"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "TC_005 gmiBank login Test",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-14T15:56:01.537Z",
-        "line": 44,
-        "name": "New Registration",
-        "description": "",
-        "id": "gmibank-login;new-registration",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 476000000,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "user is on the gmiBank page",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_004_Login_SD.user_is_on_the_gmiBank_page()"
+              "location": "gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_enter_invalid_SNN()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 110000000,
+              "duration": 489000000,
               "status": "passed"
             },
-            "line": 46,
-            "name": "Click on the login",
+            "line": 19,
+            "name": "click search button",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_004_Login_SD.click_on_the_login()"
+              "location": "gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.click_search_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 109000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//div[@class\u003d\u0027invalid-feedback\u0027])[8]\"}\n  (Session info: chrome\u003d86.0.4240.193)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-HJNV741T\u0027, ip: \u0027192.168.1.68\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_275\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\yavuz\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63415}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 76b39c1dfe17346c7ee80e46d0cf8696\n*** Element info: {Using\u003dxpath, value\u003d(//div[@class\u003d\u0027invalid-feedback\u0027])[8]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.getText(Unknown Source)\r\n\tat gmibank_team06.step_definitions.US_010_Address_StepDef.verify_error_message(US_010_Address_StepDef.java:78)\r\n\tat ✽.verify error message(file:///C:/Users/yavuz/IdeaProjects/gmi_bank_app/src/test/resources/features/US_009_SSN_Check.feature:20)\r\n",
+              "duration": 10085000000,
+              "status": "failed"
             },
-            "line": 47,
-            "name": "Click on the sign in",
+            "line": 20,
+            "name": "verify error message",
             "match": {
-              "location": "gmibank_team06.step_definitions.US_004_Login_SD.click_on_the_sign_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 292000000,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "Click on the You don\u0027t have an account yet? Register a new account",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_005_Login_SD.click_on_the_You_don_t_have_an_account_yet_Register_a_new_account()"
->>>>>>> master
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 576000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "user get success message \"Registration saved! Please check your email for confirmation alert\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Registration saved! Please check your email for confirmation alert\"",
-                  "offset": 25
-                }
-              ],
-              "location": "gmibank_team06.step_definitions.US_001_Registration_StepDef.user_get_success_message(java.lang.String)"
-=======
-              "duration": 54000000,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "User should be see Registration",
-            "match": {
-              "location": "gmibank_team06.step_definitions.US_005_Login_SD.user_should_be_see_Registration()"
->>>>>>> master
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.verify_error_message()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-<<<<<<< HEAD
-            "name": "@User_story_001"
+            "name": "@User_story_009"
           },
           {
-            "name": "@TC_US1_ssn"
-=======
-            "name": "@gmiLogin_US_005"
+            "name": "@TC_01_009_SSN"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-16T06:32:54.913Z",
+        "line": 23,
+        "name": "SSN_valid",
+        "description": "",
+        "id": "ssn-check;ssn-valid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 367000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user enter valid SNN",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_enter_valid_SNN()"
+            },
+            "keyword": "Given "
           },
           {
-            "name": "@gmiBankLoginTC_007"
->>>>>>> master
+            "result": {
+              "duration": 256000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click search button",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.click_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//div[@class\u003d\u0027invalid-feedback\u0027])[8]\"}\n  (Session info: chrome\u003d86.0.4240.193)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-HJNV741T\u0027, ip: \u0027192.168.1.68\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_275\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\yavuz\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63415}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 76b39c1dfe17346c7ee80e46d0cf8696\n*** Element info: {Using\u003dxpath, value\u003d(//div[@class\u003d\u0027invalid-feedback\u0027])[8]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.getText(Unknown Source)\r\n\tat gmibank_team06.step_definitions.US_010_Address_StepDef.verify_error_message(US_010_Address_StepDef.java:78)\r\n\tat ✽.verify error message(file:///C:/Users/yavuz/IdeaProjects/gmi_bank_app/src/test/resources/features/US_009_SSN_Check.feature:26)\r\n",
+              "duration": 10087000000,
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "verify error message",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.verify_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User_story_009"
+          },
+          {
+            "name": "@TC_02_009_SSN"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-16T06:33:05.647Z",
+        "line": 29,
+        "name": "name",
+        "description": "",
+        "id": "ssn-check;name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_should_verify_name(US_09_SSN_CheckStepDef.java:33)\r\n\tat ✽.user should verify name(file:///C:/Users/yavuz/IdeaProjects/gmi_bank_app/src/test/resources/features/US_009_SSN_Check.feature:30)\r\n",
+              "duration": 106000000,
+              "status": "failed"
+            },
+            "line": 30,
+            "name": "user should verify name",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_should_verify_name()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User_story_009"
+          },
+          {
+            "name": "@TC_03_009_SSN"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-16T06:33:05.763Z",
+        "line": 33,
+        "name": "lastName",
+        "description": "",
+        "id": "ssn-check;lastname",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_verify_last_name(US_09_SSN_CheckStepDef.java:38)\r\n\tat ✽.user verify last_name(file:///C:/Users/yavuz/IdeaProjects/gmi_bank_app/src/test/resources/features/US_009_SSN_Check.feature:34)\r\n",
+              "duration": 94000000,
+              "status": "failed"
+            },
+            "line": 34,
+            "name": "user verify last_name",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_verify_last_name()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User_story_009"
+          },
+          {
+            "name": "@TC_04_009_SSN"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-16T06:33:05.865Z",
+        "line": 37,
+        "name": "email",
+        "description": "",
+        "id": "ssn-check;email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_verify_email(US_09_SSN_CheckStepDef.java:43)\r\n\tat ✽.user verify email(file:///C:/Users/yavuz/IdeaProjects/gmi_bank_app/src/test/resources/features/US_009_SSN_Check.feature:38)\r\n",
+              "duration": 97000000,
+              "status": "failed"
+            },
+            "line": 38,
+            "name": "user verify email",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_verify_email()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User_story_009"
+          },
+          {
+            "name": "@TC_009_SSN"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Creation page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-11-16T06:33:05.972Z",
+        "line": 41,
+        "name": "lastName",
+        "description": "",
+        "id": "ssn-check;lastname",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_verify_phone(US_09_SSN_CheckStepDef.java:49)\r\n\tat ✽.user verify phone(file:///C:/Users/yavuz/IdeaProjects/gmi_bank_app/src/test/resources/features/US_009_SSN_Check.feature:42)\r\n",
+              "duration": 92000000,
+              "status": "failed"
+            },
+            "line": 42,
+            "name": "user verify phone",
+            "match": {
+              "location": "gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_verify_phone()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User_story_009"
+          },
+          {
+            "name": "@TC_009_SSN"
           }
         ]
       }
     ],
-<<<<<<< HEAD
-    "name": "Registration",
+    "name": "SSN_Check",
     "description": "",
-    "id": "registration",
+    "id": "ssn-check",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_001_Registration.feature",
+    "uri": "file:src/test/resources/features/US_009_SSN_Check.feature",
     "tags": [
       {
-        "name": "@User_story_001",
-=======
-    "name": "gmiBank Login",
-    "description": "",
-    "id": "gmibank-login",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_005_Login.feature",
-    "tags": [
-      {
-        "name": "@gmiLogin_US_005",
->>>>>>> master
+        "name": "@User_story_009",
         "type": "Tag",
         "location": {
           "line": 1,

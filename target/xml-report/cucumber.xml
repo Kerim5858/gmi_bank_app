@@ -1,64 +1,134 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="9.259">
-<testcase classname="Registration" name="valid ssn" time="8.807">
+<testsuite errors="0" failures="6" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="35.216">
+<testcase classname="SSN_Check" name="go to Create or edit a Customer" time="12.204">
 <system-out><![CDATA[Given user go to GMI home page..............................................passed
-And user click usericon.....................................................passed
-And user click register.....................................................passed
-Given user click ssn textbox  and enter ssn "873-12-6534"...................passed
-And user click name textbox and enter name "Ayse"...........................passed
-And user click lastname textbox and enter lastname "Demir"..................passed
-And user click address textbox and enter address "12 column way"............passed
-And user click mobile phone textbox and enter mobile phone number "197-912-1982".passed
-And user click username textbox and enter username "AyseD"..................passed
-And user click email textbox and enter email "ayse@gmail.com"...............passed
-And user click new password textbox and enter password "Ad192837?"..........passed
-And user click conf textbox and enter conf password "Ad192837?".............passed
-And user click register button..............................................passed
-Then user get success message "Registration saved! Please check your email for confirmation alert".passed
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="17.55">
-<testcase classname="gmiBank Login" name="Go to login page negativePage" time="10.763">
-<system-out><![CDATA[Given user is on the gmiBank page...........................................passed
-And Click on the login......................................................passed
-And Click on the sign in....................................................passed
+And user click sig in button................................................passed
+And user enter valid username...............................................passed
+And user enter valid password...............................................passed
+And user click sign in button...............................................passed
+And user click my operation.................................................passed
+And user click manage Customer..............................................passed
+Then user click Create a new Customer button................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="gmiBank Login" name="Negative  username test" time="3.607">
-<system-out><![CDATA[And User should be invalid username.........................................passed
-And User should be valid password...........................................passed
-And User click sing in button...............................................passed
-Then Then i should see the error message....................................passed
-]]></system-out>
+<testcase classname="SSN_Check" name="SSN_valid" time="10.903">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class='invalid-feedback'])[8]&quot;}&#10;  (Session info: chrome=86.0.4240.193)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-HJNV741T', ip: '192.168.1.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_275'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\yavuz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63415}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 76b39c1dfe17346c7ee80e46d0cf8696&#10;*** Element info: {Using=xpath, value=(//div[@class='invalid-feedback'])[8]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user enter invalid SNN................................................passed
+And click search button.....................................................passed
+Then verify error message...................................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='invalid-feedback'])[8]"}
+  (Session info: chrome=86.0.4240.193)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-HJNV741T', ip: '192.168.1.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_275'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\yavuz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63415}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 76b39c1dfe17346c7ee80e46d0cf8696
+*** Element info: {Using=xpath, value=(//div[@class='invalid-feedback'])[8]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.getText(Unknown Source)
+	at gmibank_team06.step_definitions.US_010_Address_StepDef.verify_error_message(US_010_Address_StepDef.java:78)
+	at ✽.verify error message(file:///C:/Users/yavuz/IdeaProjects/gmi_bank_app/src/test/resources/features/US_009_SSN_Check.feature:20)
+]]></failure>
 </testcase>
-<testcase classname="gmiBank Login" name="Negative password test" time="0.216">
-<system-out><![CDATA[And User should be valid username...........................................passed
-And User should be invalid password.........................................passed
-And User click sing in button...............................................passed
-Then Then I should see the error message1...................................passed
-]]></system-out>
+<testcase classname="SSN_Check" name="SSN_valid_2" time="10.714">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class='invalid-feedback'])[8]&quot;}&#10;  (Session info: chrome=86.0.4240.193)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-HJNV741T', ip: '192.168.1.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_275'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\yavuz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63415}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 76b39c1dfe17346c7ee80e46d0cf8696&#10;*** Element info: {Using=xpath, value=(//div[@class='invalid-feedback'])[8]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user enter valid SNN..................................................passed
+And click search button.....................................................passed
+Then verify error message...................................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='invalid-feedback'])[8]"}
+  (Session info: chrome=86.0.4240.193)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-HJNV741T', ip: '192.168.1.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_275'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\yavuz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63415}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 76b39c1dfe17346c7ee80e46d0cf8696
+*** Element info: {Using=xpath, value=(//div[@class='invalid-feedback'])[8]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.getText(Unknown Source)
+	at gmibank_team06.step_definitions.US_010_Address_StepDef.verify_error_message(US_010_Address_StepDef.java:78)
+	at ✽.verify error message(file:///C:/Users/yavuz/IdeaProjects/gmi_bank_app/src/test/resources/features/US_009_SSN_Check.feature:26)
+]]></failure>
 </testcase>
-<testcase classname="gmiBank Login" name="Negative username and password test" time="1.256">
-<system-out><![CDATA[And User should be invalid username.........................................passed
-And User should be invalid password.........................................passed
-And User click sing in button...............................................passed
-Then Then I should see the error message2...................................passed
-]]></system-out>
+<testcase classname="SSN_Check" name="name" time="0.107">
+<failure message="" type="java.lang.AssertionError"><![CDATA[Given user should verify name...............................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_should_verify_name(US_09_SSN_CheckStepDef.java:33)
+	at ✽.user should verify name(file:///C:/Users/yavuz/IdeaProjects/gmi_bank_app/src/test/resources/features/US_009_SSN_Check.feature:30)
+]]></failure>
 </testcase>
-<testcase classname="gmiBank Login" name="Forget password test" time="0.308">
-<system-out><![CDATA[And Click on the Did you forget your password?..............................passed
-And provide email to checkbox...............................................passed
-And Click on the Reset password.............................................passed
-Then I should see the message reset your password...........................passed
-]]></system-out>
+<testcase classname="SSN_Check" name="lastName" time="0.095">
+<failure message="" type="java.lang.AssertionError"><![CDATA[Given user verify last_name.................................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_verify_last_name(US_09_SSN_CheckStepDef.java:38)
+	at ✽.user verify last_name(file:///C:/Users/yavuz/IdeaProjects/gmi_bank_app/src/test/resources/features/US_009_SSN_Check.feature:34)
+]]></failure>
 </testcase>
-<testcase classname="gmiBank Login" name="New Registration" time="1.043">
-<system-out><![CDATA[Given user is on the gmiBank page...........................................passed
-And Click on the login......................................................passed
-And Click on the sign in....................................................passed
-And Click on the You don't have an account yet? Register a new account......passed
-Then User should be see Registration........................................passed
->>>>>>> master
-]]></system-out>
+<testcase classname="SSN_Check" name="email" time="0.097">
+<failure message="" type="java.lang.AssertionError"><![CDATA[Given user verify email.....................................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_verify_email(US_09_SSN_CheckStepDef.java:43)
+	at ✽.user verify email(file:///C:/Users/yavuz/IdeaProjects/gmi_bank_app/src/test/resources/features/US_009_SSN_Check.feature:38)
+]]></failure>
+</testcase>
+<testcase classname="SSN_Check" name="lastName" time="0.094">
+<failure message="" type="java.lang.AssertionError"><![CDATA[Given user verify phone.....................................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at gmibank_team06.step_definitions.US_09_SSN_CheckStepDef.user_verify_phone(US_09_SSN_CheckStepDef.java:49)
+	at ✽.user verify phone(file:///C:/Users/yavuz/IdeaProjects/gmi_bank_app/src/test/resources/features/US_009_SSN_Check.feature:42)
+]]></failure>
 </testcase>
 </testsuite>

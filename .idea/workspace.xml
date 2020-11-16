@@ -23,8 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de31f2f8-e83f-4a6a-b3c4-a058e284adaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/pages/Rastgele.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/runners/US_009_SSN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/step_definitions/US_09_SSN_CheckStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US_009_SSN_Check.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/formatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/formatter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/jquery-3.4.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/jquery-3.4.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/US_001_Registration.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/US_001_Registration.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/gmibank_team06/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/gmibank_team06/utilities/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +79,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="JUnit.Login_Runner">
+  <component name="RunManager" selected="JUnit.US_009_SSN">
     <configuration name="Login_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gmi_bank_app" />
       <extension name="coverage">
@@ -111,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="US_003_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="US_009_SSN" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gmi_bank_app" />
       <extension name="coverage">
         <pattern>
@@ -120,18 +131,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="gmibank_team06.runners" />
-      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.US_003_Runner" />
+      <option name="MAIN_CLASS_NAME" value="gmibank_team06.runners.US_009_SSN" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.US_009_SSN" />
         <item itemvalue="JUnit.US_001_Registration_Runner" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="JUnit.US_001_Runner" />
         <item itemvalue="JUnit.Login_Runner" />
-        <item itemvalue="JUnit.US_003_Runner" />
-        <item itemvalue="JUnit.Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -166,25 +178,29 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="287" y="3" key="#Project_Structure/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605229880878" />
-    <state width="1491" height="2" key="GridCell.Tab.0.bottom" timestamp="1605369084320">
+    <state x="494" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605486689397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
+    <state x="494" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1280.728@0.0.1536.824" timestamp="1605486689397" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1605508835209">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605508835209" />
     <state width="1555" height="164" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
-    <state width="1491" height="2" key="GridCell.Tab.0.center" timestamp="1605369084320">
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1605508835208">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605508835208" />
     <state width="1555" height="164" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
-    <state width="1491" height="2" key="GridCell.Tab.0.left" timestamp="1605369084320">
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1605508835208">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605508835208" />
     <state width="1555" height="164" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
-    <state width="1491" height="2" key="GridCell.Tab.0.right" timestamp="1605369084320">
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1605508835208">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605369084320" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605508835208" />
     <state width="1555" height="164" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230973481" />
     <state x="287" y="3" key="SettingsEditor" timestamp="1605230433884">
       <screen x="0" y="0" width="1600" height="860" />
