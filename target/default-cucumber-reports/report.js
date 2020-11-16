@@ -1,21 +1,26 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_003_NewPassword.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_010_Address.feature");
 formatter.feature({
-  "name": "New Password Creation",
+  "name": "Address",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@US_003_NewPassword"
+      "name": "@User_story_010"
     }
   ]
 });
+formatter.background({
+  "name": "Creation page",
+  "description": "",
+  "keyword": "Background"
+});
 formatter.scenario({
-  "name": "TC_US3_001  New Password box shouldn\u0027t be empty,When it empty, User should get",
-  "description": "  \"Your password is required.\"",
+  "name": "go to Create or edit a Customer",
+  "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US_003_NewPassword"
+      "name": "@User_story_010"
     }
   ]
 });
@@ -30,794 +35,477 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click user icon",
+  "name": "user click sig in button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_user_icon()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_sig_in_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click register",
+  "name": "user enter valid username",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_register()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_enter_valid_username()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click the new password box",
+  "name": "user enter valid password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_enter_valid_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "leave the empty",
+  "name": "user click sign in button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.leave_the_empty()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_sign_in_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify the errorMessage",
+  "name": "user click my operation",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_my_operation()"
+});
+formatter.result({
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"entity-menu\"]/a/span\"}\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-5RBE1CE\u0027, ip: \u0027192.168.0.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\Anulur\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 85a394d14b6e028509b7908c324239b7\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"entity-menu\"]/a/span}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.click(Unknown Source)\r\n\tat gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_my_operation(US_010_Address_StepDef.java:45)\r\n\tat ✽.user click my operation(file:///C:/Users/Anulur/IdeaProjects/mytestNGframework/gmi_bank_app/src/test/resources/features/US_010_Address.feature:12)\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "user click manage Customer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_manage_Customer()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click Create a new Customer button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_errorMessage()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_Create_a_new_Customer_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.background({
+  "name": "Creation page",
+  "description": "",
+  "keyword": "Background"
 });
 formatter.scenario({
-  "name": "TC_US3_002 The password must be at least 4 characters long, if it is less you should get a",
-  "description": "  \"Your password is required to be at least 4 characters.\"",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_003_NewPassword"
-    },
-    {
-      "name": "@Less_than-4"
-    }
-  ]
-});
-formatter.step({
-  "name": "click the new password box",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "send data less than 4  data",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_data_less_than_data(java.lang.Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify the message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_message()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_US3_003 User should not get any error message when entering at least 4 characters",
+  "name": "negative",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US_003_NewPassword"
+      "name": "@User_story_010"
     },
     {
-      "name": "@Least_4_chars"
+      "name": "@TC_01_Address"
     }
   ]
 });
 formatter.step({
-  "name": "click the new password box",
+  "name": "user click address textbox",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#tp\\-customer\\-address\"}\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-5RBE1CE\u0027, ip: \u0027192.168.0.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\Anulur\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 85a394d14b6e028509b7908c324239b7\n*** Element info: {Using\u003did, value\u003dtp-customer-address}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\r\n\tat gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox(US_010_Address_StepDef.java:60)\r\n\tat ✽.user click address textbox(file:///C:/Users/Anulur/IdeaProjects/mytestNGframework/gmi_bank_app/src/test/resources/features/US_010_Address.feature:18)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "send the least 4 digit  data",
+  "name": "user leave clear textbox",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_least_digit_data(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_leave_clear_textbox()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "verify the strength bar",
+  "name": "user click save button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_strength_level()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_US3_004 There should be at least 1 LOWERCASE char for stronger password and",
-  "description": "  see the level chart change accordingly",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_003_NewPassword"
-    },
-    {
-      "name": "@Least_lowercase"
-    }
-  ]
+  "status": "skipped"
 });
 formatter.step({
-  "name": "click the new password box",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "send the  least 1 LOWERCASE data",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_least_LOWERCASE_data(java.lang.Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify the with least 1 LOWERCASEstrength level",
+  "name": "verify error message",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_with_least_LOWERCASEstrength_level(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.verify_error_message()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.background({
+  "name": "Creation page",
+  "description": "",
+  "keyword": "Background"
 });
 formatter.scenario({
-  "name": "TC_US3_005 When doesn\u0027t include at least 1 LOWERCASE char for stronger password and",
-  "description": "  see the level chart change accordingly",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_003_NewPassword"
-    },
-    {
-      "name": "@WithoutLowerCase"
-    }
-  ]
-});
-formatter.step({
-  "name": "click the new password box",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "send the doesn\u0027t include at least 1 LOWERCASE data",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_doesn_t_include_at_least_LOWERCASE_data(java.lang.Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify the doesn\u0027t include at least 1 LOWERCASE strength level",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_doesn_t_include_at_least_LOWERCASE_strength_level(java.lang.Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_US3_006 There should be at least 1  UPPERCASE char and see the level  chart change accordingly",
+  "name": "positive",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US_003_NewPassword"
+      "name": "@User_story_010"
     },
     {
-      "name": "@Least_Uppercase"
+      "name": "@TC_01_Address"
     }
   ]
 });
 formatter.step({
-  "name": "click the new password box",
+  "name": "user click address textbox",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#tp\\-customer\\-address\"}\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-5RBE1CE\u0027, ip: \u0027192.168.0.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\Anulur\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 85a394d14b6e028509b7908c324239b7\n*** Element info: {Using\u003did, value\u003dtp-customer-address}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\r\n\tat gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox(US_010_Address_StepDef.java:60)\r\n\tat ✽.user click address textbox(file:///C:/Users/Anulur/IdeaProjects/mytestNGframework/gmi_bank_app/src/test/resources/features/US_010_Address.feature:25)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "send the least 1  UPPERCASE data",
+  "name": "user enter valid data for address",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_least_UPPERCASE_data(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_enter_valid_data_for_address()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "verify the with least 1  UPPERCASE strength level",
+  "name": "user click save button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_with_least_UPPERCASE_strength_level(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_US3_007 When doesn\u0027t include at least 1  UPPERCASE char for stronger password and",
-  "description": "  see the level chart change accordingly",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_003_NewPassword"
-    },
-    {
-      "name": "@WithoutupperCase"
-    }
-  ]
+  "status": "skipped"
 });
 formatter.step({
-  "name": "click the new password box",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "send the doesn\u0027t include at least 1  UPPERCASE data",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_doesn_t_include_at_least_UPPERCASE_data(java.lang.Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify the doesn\u0027t include at least 1  UPPERCASEstrength level",
+  "name": "should not see any message for address",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_doesn_t_include_at_least_UPPERCASEstrength_level(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.should_not_see_any_message_for_address()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.background({
+  "name": "Creation page",
+  "description": "",
+  "keyword": "Background"
 });
 formatter.scenario({
-  "name": "TC_US3_008 There should be at least 1 DIGIT and see the level  chart change accordingly",
+  "name": "negative",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US_003_NewPassword"
+      "name": "@User_story_010"
     },
     {
-      "name": "@Least_Digit"
+      "name": "@TC_01_City"
     }
   ]
 });
 formatter.step({
-  "name": "click the new password box",
+  "name": "user click address textbox",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#tp\\-customer\\-address\"}\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-5RBE1CE\u0027, ip: \u0027192.168.0.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\Anulur\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 85a394d14b6e028509b7908c324239b7\n*** Element info: {Using\u003did, value\u003dtp-customer-address}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\r\n\tat gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox(US_010_Address_StepDef.java:60)\r\n\tat ✽.user click address textbox(file:///C:/Users/Anulur/IdeaProjects/mytestNGframework/gmi_bank_app/src/test/resources/features/US_010_Address.feature:32)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "send the least 1 DIGIT  data",
+  "name": "user leave clear textbox",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_least_DIGIT_data(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_leave_clear_textbox()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "verify the least 1 DIGIT strength level",
+  "name": "user click save button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_least_DIGIT_strength_level(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_US3_009  When doesn\u0027t include at least 1 DIGIT  char for stronger password and",
-  "description": "  see the level chart change accordingly",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_003_NewPassword"
-    },
-    {
-      "name": "@withoutDigit"
-    }
-  ]
+  "status": "skipped"
 });
 formatter.step({
-  "name": "click the new password box",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "send the doesn\u0027t include at least 1 DIGIT",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_doesn_t_include_at_least_DIGIT(java.lang.Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify the doesn\u0027t include at least 1 DIGITstrength level",
+  "name": "verify error message for city",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_doesn_t_include_at_least_DIGITstrength_level(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.verify_error_message_for_city()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.background({
+  "name": "Creation page",
+  "description": "",
+  "keyword": "Background"
 });
 formatter.scenario({
-  "name": "TC_US3_010  There should be at least 1 SPECIAL char and see the level chart change accordingly",
+  "name": "positive",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US_003_NewPassword"
+      "name": "@User_story_010"
     },
     {
-      "name": "@LeastSpecial"
+      "name": "@TC_01_City"
     }
   ]
 });
 formatter.step({
-  "name": "click the new password box",
+  "name": "user click address textbox",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#tp\\-customer\\-address\"}\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-5RBE1CE\u0027, ip: \u0027192.168.0.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\Anulur\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 85a394d14b6e028509b7908c324239b7\n*** Element info: {Using\u003did, value\u003dtp-customer-address}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\r\n\tat gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox(US_010_Address_StepDef.java:60)\r\n\tat ✽.user click address textbox(file:///C:/Users/Anulur/IdeaProjects/mytestNGframework/gmi_bank_app/src/test/resources/features/US_010_Address.feature:39)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "send the least 1 SPECIAL data",
+  "name": "user enter valid data for city",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_least_SPECIAL_data(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_enter_valid_data_for_city()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "verify the least 1 SPECIAL strength level",
+  "name": "user click save button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_least_SPECIAL_strength_level(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_US3_011 When doesn\u0027t include at least 1 SPECIAL char for stronger password and",
-  "description": "  see the level chart change accordingly",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_003_NewPassword"
-    },
-    {
-      "name": "@WithoutSpecial"
-    }
-  ]
+  "status": "skipped"
 });
 formatter.step({
-  "name": "click the new password box",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "send the doesn\u0027t include at least 1 SPECIALdata",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_doesn_t_include_at_least_SPECIALdata(java.lang.Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify the doesn\u0027t include at least 1 SPECIAL strength level",
+  "name": "should not see any message for city",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_doesn_t_include_at_least_SPECIAL_strength_level(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.should_not_see_any_message_for_city()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.background({
+  "name": "Creation page",
+  "description": "",
+  "keyword": "Background"
 });
 formatter.scenario({
-  "name": "TC_US3_012  There should be at least 7 chars for a stronger password",
+  "name": "negative",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US_003_NewPassword"
+      "name": "@User_story_010"
     },
     {
-      "name": "@Least_7_chars"
+      "name": "@TC_01_Country"
     }
   ]
 });
 formatter.step({
-  "name": "click the new password box",
+  "name": "user click address textbox",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#tp\\-customer\\-address\"}\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-5RBE1CE\u0027, ip: \u0027192.168.0.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\Anulur\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 85a394d14b6e028509b7908c324239b7\n*** Element info: {Using\u003did, value\u003dtp-customer-address}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\r\n\tat gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox(US_010_Address_StepDef.java:60)\r\n\tat ✽.user click address textbox(file:///C:/Users/Anulur/IdeaProjects/mytestNGframework/gmi_bank_app/src/test/resources/features/US_010_Address.feature:46)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "send the  at least 7 chars data",
+  "name": "user leave clear textbox for country",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_at_least_chars_data(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_leave_clear_textbox_for_country()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "verify the at least 7 chars strength level",
+  "name": "user click save button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_at_least_chars_strength_level(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_US3_013\tCreate a very strong password when using more than one of each of the uppercase, lowercase,",
-  "description": "  digit or special characters",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_003_NewPassword"
-    },
-    {
-      "name": "@Stronge_password"
-    }
-  ]
+  "status": "skipped"
 });
 formatter.step({
-  "name": "click the new password box",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "send the a very strong password data",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_a_very_strong_password_data()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify the a very strong password strength level",
+  "name": "verify error message for country",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_a_very_strong_password_strength_level()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.verify_error_message_for_country()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.background({
+  "name": "Creation page",
+  "description": "",
+  "keyword": "Background"
 });
 formatter.scenario({
-  "name": "TC_US3_014 Box Of New Password Confirmation  shouldn\u0027t be empty,When it empty, User should get",
-  "description": "  \"Your password is required.\"",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_003_NewPassword"
-    },
-    {
-      "name": "@NewPasswConfirmton"
-    }
-  ]
-});
-formatter.step({
-  "name": "click the new password CONFIRMATION box",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_CONFIRMATION_box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "leave the empty confirm new password box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.leave_the_empty_confirm_new_password_box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify the empty confirm error messages",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_empty_confirm_error_messages()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_US3_015  The box of new password confirmation must be at least 4 characters long,",
-  "description": "  if it is less you should get a \"Your confirmation password is required to be at least 4 characters.\"",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_003_NewPassword"
-    },
-    {
-      "name": "@Least_4_chars_newConfBox"
-    }
-  ]
-});
-formatter.step({
-  "name": "click the new password CONFIRMATION box",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_CONFIRMATION_box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "send the data less then 4",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_data_less_then(java.lang.Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify the less then 4 error message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_less_then_error_message(java.lang.Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_US3_016\tWhen New Password and New Password Confirmation  don\u0027t match the user should get the",
-  "description": "  \"The password and its confirmation do not match!\"",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_003_NewPassword"
-    },
-    {
-      "name": "@Doent_Match"
-    }
-  ]
-});
-formatter.step({
-  "name": "click the new password CONFIRMATION box",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_CONFIRMATION_box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "send the no different  data from new password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_no_different_data_from_new_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify the no different  data  error message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verify_the_no_different_data_error_message()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_US3_017\tNew Password and New Password Confirmation should match and User shouldn\u0027t get any error message",
+  "name": "negative",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US_003_NewPassword"
+      "name": "@User_story_010"
     },
     {
-      "name": "@Password_match"
+      "name": "@TC_01_State"
     }
   ]
 });
 formatter.step({
-  "name": "click the new password box",
+  "name": "user click address textbox",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#tp\\-customer\\-address\"}\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-5RBE1CE\u0027, ip: \u0027192.168.0.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\Anulur\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 85a394d14b6e028509b7908c324239b7\n*** Element info: {Using\u003did, value\u003dtp-customer-address}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\r\n\tat gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox(US_010_Address_StepDef.java:60)\r\n\tat ✽.user click address textbox(file:///C:/Users/Anulur/IdeaProjects/mytestNGframework/gmi_bank_app/src/test/resources/features/US_010_Address.feature:53)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "send the new data",
+  "name": "user leave clear textbox for state",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_new_data()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_leave_clear_textbox_for_state()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "click the new password confirmation box",
-  "keyword": "And "
+  "name": "user click save button",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_confirmation_box()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "send the same data data",
-  "keyword": "And "
+  "name": "verify error message for state",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_same_data_data()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.verify_error_message_for_state()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.background({
+  "name": "Creation page",
+  "description": "",
+  "keyword": "Background"
 });
 formatter.scenario({
-  "name": "TC_US3_018\tUser must be able to enter a maximum of 50 characters, if it be more than 50 characters it will accept first 50 characters",
+  "name": "positive",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US_003_NewPassword"
+      "name": "@User_story_010"
     },
     {
-      "name": "@Very_long_data"
+      "name": "@TC_01_State"
     }
   ]
 });
 formatter.step({
-  "name": "click the new password box",
+  "name": "user click address textbox",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.click_the_new_password_box()"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#tp\\-customer\\-address\"}\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-5RBE1CE\u0027, ip: \u0027192.168.0.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\Anulur\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 85a394d14b6e028509b7908c324239b7\n*** Element info: {Using\u003did, value\u003dtp-customer-address}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\r\n\tat gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_address_textbox(US_010_Address_StepDef.java:60)\r\n\tat ✽.user click address textbox(file:///C:/Users/Anulur/IdeaProjects/mytestNGframework/gmi_bank_app/src/test/resources/features/US_010_Address.feature:60)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "send the very long more then 50 chars data",
+  "name": "user enter valid data for state",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.send_the_very_long_more_then_chars_data(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_enter_valid_data_for_state()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "verfy the result long more then 50 chars",
+  "name": "user click save button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank_team06.step_definitions.US_003_NewPassword_StepDef.verfy_the_result_long_more_then_chars(java.lang.Integer)"
+  "location": "gmibank_team06.step_definitions.US_010_Address_StepDef.user_click_save_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 });
