@@ -74,7 +74,6 @@ public class US_001_Registration_StepDef {
     @Given("user click conf textbox and enter conf password {string}")
     public void user_click_conf_textbox_and_enter_conf_password(String string) {
         us_001_registrationPage.confirmationPassword.click();
-        us_001_registrationPage.confirmationPassword.sendKeys(string);
 
     }
 
