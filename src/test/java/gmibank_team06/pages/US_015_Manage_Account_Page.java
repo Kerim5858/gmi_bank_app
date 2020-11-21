@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class US_015_Manage_Account {
-    public US_015_Manage_Account(){
+public class US_015_Manage_Account_Page {
+    public US_015_Manage_Account_Page(){
         PageFactory.initElements(Driver.getDriver(),this);}
 
         @FindBy(xpath="(//a[@class='btn btn-info btn-sm'])")
