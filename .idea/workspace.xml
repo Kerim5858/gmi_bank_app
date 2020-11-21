@@ -31,6 +31,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ee192801-ea2f-472b-8761-58303ce0a798" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="eda4fb06-8339-4bd6-b9b4-5633edc5f80d" name="target and .idea remover from git repo" comment="" />
     <option name="SHOW_DIALOG" value="false" />
