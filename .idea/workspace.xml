@@ -22,15 +22,13 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/berati" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:berati" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee192801-ea2f-472b-8761-58303ce0a798" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="eda4fb06-8339-4bd6-b9b4-5633edc5f80d" name="target and .idea remover from git repo" comment="" />
@@ -79,7 +77,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/berati" />
+                        <option value="berati" />
                       </list>
                     </value>
                   </entry>
@@ -90,8 +88,37 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/berati" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="630" height="482" key="Diff.GoToChangePopup" timestamp="1605960666815">
+      <screen x="64" y="28" width="1856" height="1019" />
+    </state>
+    <state width="630" height="482" key="Diff.GoToChangePopup/64.28.1856.1019/1920.0.1920.1080@64.28.1856.1019" timestamp="1605960666815" />
+    <state x="164" y="128" width="1656" height="819" key="DiffContextDialog" timestamp="1605960969793">
+      <screen x="64" y="28" width="1856" height="1019" />
+    </state>
+    <state x="164" y="128" width="1656" height="819" key="DiffContextDialog/64.28.1856.1019/1920.0.1920.1080@64.28.1856.1019" timestamp="1605960969793" />
     <state x="886" y="452" width="303" height="178" key="VCS.ChangelistChooser" timestamp="1605955914159">
       <screen x="64" y="28" width="1856" height="1019" />
     </state>
