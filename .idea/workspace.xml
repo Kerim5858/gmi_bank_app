@@ -23,19 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de31f2f8-e83f-4a6a-b3c4-a058e284adaf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank_team06/runners/US_001_Registration_Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/runners/US_001_Registration_Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank_team06/step_definitions/US_008_PasswordChange_StepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/step_definitions/US_008_PasswordChange_StepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US_002_Invalid_Registration.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US_002_Invalid_Registration.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US_008_ChangePassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US_008_ChangePassword.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/US_002_Invalid_Registration.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/US_002_Invalid_Registration.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/US_008_ChangePassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/US_008_ChangePassword.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/gmibank_team06/runners/US_001_Registration_Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/gmibank_team06/runners/US_001_Registration_Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/gmibank_team06/step_definitions/US_008_PasswordChange_StepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/gmibank_team06/step_definitions/US_008_PasswordChange_StepDef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank_team06/step_definitions/US_001_Registration_StepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank_team06/step_definitions/US_001_Registration_StepDef.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +53,19 @@
         <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1kCj7W84h7HHpSQcZnbgRcV5CVk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -169,7 +168,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -188,12 +187,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="287" y="3" key="#Project_Structure" timestamp="1605229880878">
@@ -224,5 +224,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="287" y="3" key="SettingsEditor/0.0.1600.860/1600.0.1680.1010@0.0.1600.860" timestamp="1605230433884" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1605883659666">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1605883659666" />
   </component>
 </project>
