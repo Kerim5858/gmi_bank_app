@@ -16,6 +16,8 @@ public class US_012_ManageCustomers_Page {
     }
     @FindBy(xpath = "//*[@class='info jhi-item-count']")
     public WebElement ItemsCountText;
+    @FindBy(xpath = "(//a[@class='d-flex align-items-center dropdown-toggle nav-link'])[2]")
+    public WebElement sign2;
 
     @FindBy(xpath = "//td[1]")
     public WebElement id;
